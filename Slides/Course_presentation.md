@@ -44,7 +44,7 @@ At the end of the course the student should be able to use mathematical methods 
     - March 30
     - April 20
     - May 11
-- Homeworks are due on the next dates
+- Homework is due on the following dates
     - January 29
     - February 2
     - March 2
