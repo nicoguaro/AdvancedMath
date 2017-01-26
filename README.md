@@ -5,9 +5,12 @@ This is a repository with material for the course Advanced Mathematics for Engin
 ## Contents
 
 - Notebooks: This folder contains several Jupyter Notebooks intended to teach SymPy
-    - [SymPy in 10 minutes](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy%20in%2010%20minutes.ipynb).
+    - [SymPy in 10 minutes](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy%20in%2010%20minutes.ipynb)
+    - [Linear Algebra in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Linear%20Algebra.ipynb)
+    
 - Slides
     - [Course presentation](https://cdn.rawgit.com/nicoguaro/AdvancedMath/cddc9b94/Slides/Course_presentation.html)
+    - [Linear transformations](https://cdn.rawgit.com/nicoguaro/AdvancedMath/cddc9b94/Slides/Linear_transformations.html)
 
 ## License
 All code is under MIT license and media under Creative Commons Attribute.
