@@ -10,7 +10,7 @@ This is a repository with material for the course Advanced Mathematics for Engin
     
 - Slides
     - [Course presentation](https://cdn.rawgit.com/nicoguaro/AdvancedMath/cddc9b94/Slides/Course_presentation.html)
-    - [Linear transformations](https://cdn.rawgit.com/nicoguaro/AdvancedMath/cddc9b94/Slides/Linear_transformations.html)
+    - [Linear transformations](https://cdn.rawgit.com/nicoguaro/AdvancedMath/5fa8ad68/Slides/Linear_transformations.html)
 
 ## License
 All code is under MIT license and media under Creative Commons Attribute.
