@@ -6,11 +6,10 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <meta name="author" content="Nicolas Guarin-Zapata" />
+  <meta name="author" content="Nicolás Guarín-Zapata" />
   <meta name="author" content="email: nguarinz@eafit.edu.co" />
   <meta name="author" content="github: nicoguaro" />
-  <meta name="date" content="2017-01-26" />
-  <title>Advanced Mathematics for Engineers</title>
+  <title>Linear Tranformations and Eigenvalues/Eigenvectors</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
     href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
@@ -21,26 +20,50 @@
 </head>
 <body>
 <div class="slide titlepage">
-  <h1 class="title">Advanced Mathematics for Engineers</h1>
+  <h1 class="title">Linear Tranformations and Eigenvalues/Eigenvectors</h1>
   <p class="author">
-Nicolas Guarin-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
+Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
   </p>
-  <p class="date">January 26, 2017</p>
+  <p class="date">February 2, 2017</p>
+</div>
+<div id="linear-transformation" class="slide section level1">
+<h1>Linear Transformation</h1>
+<p>A linear map (also called a linear mapping, linear transformation) is a mapping <span class="math inline"><em>V</em> → <em>W</em></span> between two vector spaces that preserves the operations of addition and scalar multiplication.</p>
+<p>Let <span class="math inline"><em>V</em></span> and <span class="math inline"><em>W</em></span> be vector spaces over the same <a href="https://en.wikipedia.org/wiki/Field_(mathematics)">field</a> <span class="math inline"><em>K</em></span>. A function <span class="math inline"><em>f</em> : <em>V</em> → <em>W</em></span> is said to be a <em>linear map</em> if for any two vectors <span class="math inline"><em>x</em></span> and <span class="math inline"><em>y</em></span> in <span class="math inline"><em>V</em></span> and any scalar <span class="math inline"><em>α</em></span> in <span class="math inline"><em>K</em></span>, the following two conditions are satisfied:</p>
+<ul>
+<li><span class="math inline"><em>f</em>(<strong>x</strong> + <strong>y</strong>)=<em>f</em>(<strong>x</strong>)+<em>f</em>(<strong>y</strong>) (Additivity)</span></li>
+<li><span class="math inline"><em>f</em>(<em>α</em><strong>x</strong>)=<em>α</em><em>f</em>(<strong>x</strong>) (Homogeneity)</span></li>
+</ul>
 </div>
 <div id="video-lecture-linear-transformations" class="slide section level1">
 <h1>Video lecture: Linear transformations</h1>
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/kYB8IZa5AuE?rel=0" frameborder="0" allowfullscreen>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/kYB8IZa5AuE?rel=0" frameborder="0" allowfullscreen class="centObj">
 </iframe>
 </div>
 <div id="applet-linear-transformations" class="slide section level1">
 <h1>Applet: Linear transformations</h1>
-<iframe width="1280" height="720" src="http://math.mercyhurst.edu/~lwilliams/Applets/LinearTransformations.html" frameborder="0" allowfullscreen>
+<iframe width="1280" height="720" src="http://math.mercyhurst.edu/~lwilliams/Applets/LinearTransformations.html" frameborder="0" allowfullscreen class="centObj">
 </iframe>
+</div>
+<div id="eigenvalues-and-eigenvectors" class="slide section level1">
+<h1>Eigenvalues and Eigenvectors</h1>
+<p>An eigenvector or characteristic vector of a linear transformation is a non-zero vector whose direction does not change when that linear transformation is applied to it. More formally, if <span class="math inline"><em>T</em></span> is a linear transformation from a vector space <span class="math inline"><em>V</em></span> over a field <span class="math inline"><em>F</em></span> into itself and <span class="math inline"><em>v</em></span> is a vector in <span class="math inline"><em>V</em></span> that is not the zero vector, then <span class="math inline"><em>v</em></span> is an eigenvector of <span class="math inline"><em>T</em></span> if <span class="math inline"><em>T</em>(<em>v</em>)</span> is a scalar multiple of <span class="math inline"><em>v</em></span>. This condition can be written as the equation</p>
+<p><br /><span class="math display"><em>T</em>(<em>v</em>)=<em>λ</em><em>v</em>,</span><br /></p>
+<p>where <span class="math inline"><em>λ</em></span> is a scalar in the field <span class="math inline"><em>F</em></span>, known as the eigenvalue, characteristic value, or characteristic root associated with the eigenvector <span class="math inline"><em>v</em></span>.</p>
+</div>
+<div class="slide section level1">
+
+<p><img src="./img/Mona_Lisa_eigenvector_grid.png"
+    width=800
+    class="centObj"></p>
+<p>In this <a href="https://en.wikipedia.org/wiki/Shear_mapping">shear mapping</a> the red arrow changes direction but the blue arrow does not. The blue arrow is an eigenvector of this shear mapping because it doesn't change direction, and since its length is unchanged, its eigenvalue is 1.</p>
 </div>
 <div id="references" class="slide section level1">
 <h1>References</h1>
 <ul>
-<li>Grant Sanderson. <a href="http://www.3blue1brown.com/essence-of-linear-algebra/">Essence of linear algebra.</a>, 2016.</li>
+<li>Grant Sanderson. <a href="http://www.3blue1brown.com/essence-of-linear-algebra/">Essence of linear algebra.</a>, 2016. Retrieved February 1, 2017.</li>
+<li>Lauren Kelly Williams. <a href="http://math.mercyhurst.edu/~lwilliams/Applets/LinearTransformations.html">Linear Tranformations Applet</a>, 2016. Retrieved February 1, 2017.</li>
+<li>Wikipedia contributors. <a href="https://en.wikipedia.org/w/index.php?title=Eigenvalues_and_eigenvectors&amp;oldid=763060013">Eigenvalues and eigenvectors</a>. Retrieved February 1, 2017.</li>
 </ul>
 </div>
 </body>
