@@ -42,6 +42,12 @@ The slides for some lectures are in the folder [``Slides``](./Slides) as ``.html
 
      pandoc -t slidy --css style.css -s slides.md -o slides.html
 
+or
+
+     pandoc -t slidy --css style.css --mathjax -s slides.md -o slides.html
+
+to use [MathJax](https://www.mathjax.org/) to render the equations.
+
 ## License
 All code is under MIT license and media under Creative Commons Attribute.
 
