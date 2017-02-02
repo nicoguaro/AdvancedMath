@@ -37,7 +37,25 @@ Let $V$ and $W$ be vector spaces over the same [field](https://en.wikipedia.org/
     frameborder="0"
     allowfullscreen
     class="centObj"></iframe>
-    
+
+------------------
+
+## Examples of linear transformation matrices
+
+In two-dimensional space $\mathbb{R}^2$ linear maps are described by 2 × 2 real matrices. These are some examples:
+
+- rotation by 90 degrees counterclockwise:
+
+$$\mathbf{A}=\begin{pmatrix}0 & -1\\ 1 & 0\end{pmatrix}$$
+
+- rotation by angle ''θ'' counterclockwise: $$\mathbf{A}=\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$$
+- reflection against the ''x'' axis: $$\mathbf{A}=\begin{pmatrix}1 & 0\\ 0 & -1\end{pmatrix}$$
+- reflection against the ''y'' axis: $$\mathbf{A}=\begin{pmatrix}-1 & 0\\ 0 & 1\end{pmatrix}$$
+- scaling by 2 in all directions: $$\mathbf{A}=\begin{pmatrix}2 & 0\\ 0 & 2\end{pmatrix}$$
+- horizontal shear mapping: $$\mathbf{A}=\begin{pmatrix}1 & m\\ 0 & 1\end{pmatrix}$$
+- squeeze mapping: $$\mathbf{A}=\begin{pmatrix}k & 0\\ 0 & 1/k\end{pmatrix}$$
+- projection onto the ''y'' axis: $$\mathbf{A}=\begin{pmatrix}0 & 0\\ 0 & 1\end{pmatrix}.$$
+
 ------------------
 
 # Eigenvalues and Eigenvectors

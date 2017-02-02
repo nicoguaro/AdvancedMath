@@ -15,6 +15,7 @@
     href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
    href="style.css" />
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
     charset="utf-8" type="text/javascript"></script>
 </head>
@@ -28,11 +29,11 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
 </div>
 <div id="linear-transformation" class="slide section level1">
 <h1>Linear Transformation</h1>
-<p>A linear map (also called a linear mapping, linear transformation) is a mapping <span class="math inline"><em>V</em> → <em>W</em></span> between two vector spaces that preserves the operations of addition and scalar multiplication.</p>
-<p>Let <span class="math inline"><em>V</em></span> and <span class="math inline"><em>W</em></span> be vector spaces over the same <a href="https://en.wikipedia.org/wiki/Field_(mathematics)">field</a> <span class="math inline"><em>K</em></span>. A function <span class="math inline"><em>f</em> : <em>V</em> → <em>W</em></span> is said to be a <em>linear map</em> if for any two vectors <span class="math inline"><em>x</em></span> and <span class="math inline"><em>y</em></span> in <span class="math inline"><em>V</em></span> and any scalar <span class="math inline"><em>α</em></span> in <span class="math inline"><em>K</em></span>, the following two conditions are satisfied:</p>
+<p>A linear map (also called a linear mapping, linear transformation) is a mapping <span class="math inline">\(V \rightarrow W\)</span> between two vector spaces that preserves the operations of addition and scalar multiplication.</p>
+<p>Let <span class="math inline">\(V\)</span> and <span class="math inline">\(W\)</span> be vector spaces over the same <a href="https://en.wikipedia.org/wiki/Field_(mathematics)">field</a> <span class="math inline">\(K\)</span>. A function <span class="math inline">\(f : V \rightarrow W\)</span> is said to be a <em>linear map</em> if for any two vectors <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> in <span class="math inline">\(V\)</span> and any scalar <span class="math inline">\(α\)</span> in <span class="math inline">\(K\)</span>, the following two conditions are satisfied:</p>
 <ul>
-<li><span class="math inline"><em>f</em>(<strong>x</strong> + <strong>y</strong>)=<em>f</em>(<strong>x</strong>)+<em>f</em>(<strong>y</strong>) (Additivity)</span></li>
-<li><span class="math inline"><em>f</em>(<em>α</em><strong>x</strong>)=<em>α</em><em>f</em>(<strong>x</strong>) (Homogeneity)</span></li>
+<li><span class="math inline">\(f(\mathbf{x}+\mathbf{y}) = f(\mathbf{x})+f(\mathbf{y})\quad \text{(Additivity)}\)</span></li>
+<li><span class="math inline">\(f(\alpha \mathbf{x}) = \alpha f(\mathbf{x})\quad \text{(Homogeneity)}\)</span></li>
 </ul>
 </div>
 <div id="video-lecture-linear-transformations" class="slide section level1">
@@ -45,11 +46,29 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
 <iframe width="1280" height="720" src="http://math.mercyhurst.edu/~lwilliams/Applets/LinearTransformations.html" frameborder="0" allowfullscreen class="centObj">
 </iframe>
 </div>
+<div class="slide section level1">
+
+<h2 id="examples-of-linear-transformation-matrices">Examples of linear transformation matrices</h2>
+<p>In two-dimensional space <span class="math inline">\(\mathbb{R}^2\)</span> linear maps are described by 2 × 2 real matrices. These are some examples:</p>
+<ul>
+<li>rotation by 90 degrees counterclockwise:</li>
+</ul>
+<p><span class="math display">\[\mathbf{A}=\begin{pmatrix}0 &amp; -1\\ 1 &amp; 0\end{pmatrix}\]</span></p>
+<ul>
+<li>rotation by angle ''θ'' counterclockwise: <span class="math display">\[\mathbf{A}=\begin{pmatrix}\cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta \end{pmatrix}\]</span></li>
+<li>reflection against the ''x'' axis: <span class="math display">\[\mathbf{A}=\begin{pmatrix}1 &amp; 0\\ 0 &amp; -1\end{pmatrix}\]</span></li>
+<li>reflection against the ''y'' axis: <span class="math display">\[\mathbf{A}=\begin{pmatrix}-1 &amp; 0\\ 0 &amp; 1\end{pmatrix}\]</span></li>
+<li>scaling by 2 in all directions: <span class="math display">\[\mathbf{A}=\begin{pmatrix}2 &amp; 0\\ 0 &amp; 2\end{pmatrix}\]</span></li>
+<li>horizontal shear mapping: <span class="math display">\[\mathbf{A}=\begin{pmatrix}1 &amp; m\\ 0 &amp; 1\end{pmatrix}\]</span></li>
+<li>squeeze mapping: <span class="math display">\[\mathbf{A}=\begin{pmatrix}k &amp; 0\\ 0 &amp; 1/k\end{pmatrix}\]</span></li>
+<li>projection onto the ''y'' axis: <span class="math display">\[\mathbf{A}=\begin{pmatrix}0 &amp; 0\\ 0 &amp; 1\end{pmatrix}.\]</span></li>
+</ul>
+</div>
 <div id="eigenvalues-and-eigenvectors" class="slide section level1">
 <h1>Eigenvalues and Eigenvectors</h1>
-<p>An eigenvector or characteristic vector of a linear transformation is a non-zero vector whose direction does not change when that linear transformation is applied to it. More formally, if <span class="math inline"><em>T</em></span> is a linear transformation from a vector space <span class="math inline"><em>V</em></span> over a field <span class="math inline"><em>F</em></span> into itself and <span class="math inline"><em>v</em></span> is a vector in <span class="math inline"><em>V</em></span> that is not the zero vector, then <span class="math inline"><em>v</em></span> is an eigenvector of <span class="math inline"><em>T</em></span> if <span class="math inline"><em>T</em>(<em>v</em>)</span> is a scalar multiple of <span class="math inline"><em>v</em></span>. This condition can be written as the equation</p>
-<p><br /><span class="math display"><em>T</em>(<em>v</em>)=<em>λ</em><em>v</em>,</span><br /></p>
-<p>where <span class="math inline"><em>λ</em></span> is a scalar in the field <span class="math inline"><em>F</em></span>, known as the eigenvalue, characteristic value, or characteristic root associated with the eigenvector <span class="math inline"><em>v</em></span>.</p>
+<p>An eigenvector or characteristic vector of a linear transformation is a non-zero vector whose direction does not change when that linear transformation is applied to it. More formally, if <span class="math inline">\(T\)</span> is a linear transformation from a vector space <span class="math inline">\(V\)</span> over a field <span class="math inline">\(F\)</span> into itself and <span class="math inline">\(v\)</span> is a vector in <span class="math inline">\(V\)</span> that is not the zero vector, then <span class="math inline">\(v\)</span> is an eigenvector of <span class="math inline">\(T\)</span> if <span class="math inline">\(T(v)\)</span> is a scalar multiple of <span class="math inline">\(v\)</span>. This condition can be written as the equation</p>
+<p><span class="math display">\[T ( v ) = λ v ,\]</span></p>
+<p>where <span class="math inline">\(λ\)</span> is a scalar in the field <span class="math inline">\(F\)</span>, known as the eigenvalue, characteristic value, or characteristic root associated with the eigenvector <span class="math inline">\(v\)</span>.</p>
 </div>
 <div class="slide section level1">
 
