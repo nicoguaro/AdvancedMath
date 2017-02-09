@@ -1,6 +1,6 @@
 # Advanced Mathematics for Engineers
 
-This is a repository with material for the course Advanced Mathematics for Engineers.
+This is a repository with material for the course Advanced Mathematics for Engineers. The program of the course is located [here](./program.md).
 
 ## Contents
 
@@ -28,7 +28,7 @@ To display the slides a browser is needed. They have been tested in Mozilla Fire
 This repository also includes [Jupyter Notebooks](https://jupyter.org/). To run these you will need [Python](https://www.python.org/) and some packages:
 
 - [IPython](http://ipython.org/), a command shell for interactive computing in multiple programming languages that offers introspection, rich media, shell syntax, tab completion, and history.
-- [NumPy](http://www.numpy.org/), an extension to the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large library of high-level mathematical functions to operate on these arrays. 
+- [NumPy](http://www.numpy.org/), an extension to the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large library of high-level mathematical functions to operate on these arrays.
 - [SciPy](http://www.scipy.org/), an open source Python library used for scientific computing and technical computing.
 - [matplotlib](http://matplotlib.org/),  a plotting library for the Python programming language and its numerical mathematics extension NumPy.
 
