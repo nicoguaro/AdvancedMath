@@ -1,6 +1,6 @@
 # Advanced Mathematics for Engineers
 
-This is a repository with material for the course Advanced Mathematics for Engineering.
+This is a repository with material for the course Advanced Mathematics for Engineers.
 
 ## Contents
 
