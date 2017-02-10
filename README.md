@@ -12,6 +12,7 @@ This is a repository with material for the course Advanced Mathematics for Engin
 - Slides
     - [Course presentation](https://cdn.rawgit.com/nicoguaro/AdvancedMath/cddc9b94/Slides/Course_presentation.html)
     - [Linear transformations](https://cdn.rawgit.com/nicoguaro/AdvancedMath/5fa8ad68/Slides/Linear_transformations.html)
+    - [Vector calculus and coordinate systems](https://cdn.rawgit.com/nicoguaro/AdvancedMath/597051f1/Slides/Vector_calculus.html)
 
 ## Downloading the Tutorial Materials
 You can clone the repo using:
