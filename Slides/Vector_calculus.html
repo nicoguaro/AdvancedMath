@@ -15,6 +15,7 @@
     href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
    href="style.css" />
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
     charset="utf-8" type="text/javascript"></script>
 </head>
@@ -24,18 +25,64 @@
   <p class="author">
 Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
   </p>
-  <p class="date">February 2, 2017</p>
+  <p class="date">February 9, 2017</p>
 </div>
-<div id="curvilinear-coordinates" class="slide section level1">
-<h1>Curvilinear coordinates</h1>
+<div id="curvilinear-coordinates-example-cylindrical-coordinates" class="slide section level1">
+<h1>Curvilinear coordinates example: Cylindrical Coordinates</h1>
 <iframe width="1280" height="720" src="./img/polar_coords.html" frameborder="0" allowfullscreen class="centObj">
 </iframe>
+</div>
+<div id="coordinate-systems" class="slide section level1">
+<h1>Coordinate systems</h1>
+<p>Two common examples of curvilinear coordinates are</p>
+<h3 id="cylindrical-coordinates">Cylindrical coordinates</h3>
+<p><span class="math display">\[\begin{align}
+x =&amp; \rho \cos\phi\\
+y =&amp; \rho \sin\phi\\
+z =&amp; z
+\end{align}\]</span></p>
+<h3 id="spherical-coordinates">Spherical coordinates</h3>
+<p><span class="math display">\[\begin{align}
+x =&amp; r \sin\theta \cos\phi\\
+y =&amp; r \sin\theta \sin\phi\\
+z =&amp; r \cos\theta
+\end{align}\]</span></p>
+</div>
+<div id="transformations" class="slide section level1">
+<h1>Transformations</h1>
+<p>We can write the position vector as</p>
+<p><span class="math display">\[d\mathbf{r} = \sum\limits_{i=1}^3 \frac{\partial \mathbf{r}}{\partial u_i} du_i \, .\]</span></p>
+<p>The factor <span class="math inline">\(\partial \mathbf{r}/\partial u_i\)</span> is a non-unitary vector, we can introduce a normalized based <span class="math inline">\(\hat{\mathbf{e}}_i\)</span></p>
+<p><span class="math display">\[\frac{\partial \mathbf{r}}{\partial u_i} = h_i \hat{\mathbf{e}}_i \]</span></p>
+<p>where</p>
+<p><span class="math display">\[\left| \frac{\partial \mathbf{r}}{\partial u_i}\right| = h_i\]</span></p>
+<p>is the <a href="https://en.wikipedia.org/wiki/Curvilinear_coordinates#Relation_to_Lam.C3.A9_coefficients"><strong>scale factor</strong></a>.</p>
+</div>
+<div id="jacobian" class="slide section level1">
+<h1>Jacobian</h1>
+<p>We can rewrite the transformation, in components, as</p>
+<p><span class="math display">\[d x_i = \sum_j \frac{\partial x_i}{\partial u_j} du_j = \sum_j J_{ij} du_j \, ,\]</span></p>
+<p>where <span class="math inline">\(J_{ij} = \partial x_i/\partial u_j\)</span> are the components of the <a href="https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant">Jacobian matrix</a>.</p>
+<p>And, its determinant represents the (local) change in volume of the transformation</p>
+<p><span class="math display">\[ |J| = h_1 h_2 h_3\, .\]</span></p>
+</div>
+<div id="line-surface-and-volume-differentials" class="slide section level1">
+<h1>Line, surface and volume differentials</h1>
+<p>We can rewrite the transformation as</p>
+<p><span class="math display">\[ d\mathbf{r} = \sum_{i=1} h_i \hat{\mathbf{e}}_i du_i = \sum_{i=1}^3 d\mathbf{l}_i \, ,\]</span></p>
+<p>where <span class="math inline">\(d\mathbf{l}_i = h_i \hat{\mathbf{e}}_i du_i\)</span> is the <em>line differential</em> along the coordinate <span class="math inline">\(u_i\)</span>.</p>
+<p>We can define the <em>surface differentials</em> as the vectors that are perpendicular to the differential areas according to the right hand convention, namely</p>
+<p><span class="math display">\[d\mathbf{S}_i = d\mathbf{l}_j \times d\mathbf{l}_k =
+  h_j h_k \hat{\mathbf{e}}_i du_j du_k = \hat{\mathbf{e}}_i dS_i\]</span></p>
+<p>And the volume differential is given by the volume of the curvilinear parallelepiped defined by the line differentials, i.e.</p>
+<p><span class="math display">\[dV = d\mathbf{l}_1 \cdot (d\mathbf{l}_2 \times \mathbf{l}_3) =
+       h_1 h_2 h_3 du_1 du_2 du_3 \, .\]</span></p>
 </div>
 <div id="references" class="slide section level1">
 <h1>References</h1>
 <ul>
-<li>Alonso Sepúlveda Soto. Física matemática. Ciencia y Tecnología. Universidad de Antioquia, 2009.</li>
-<li>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Curvilinear_coordinates">&quot;Curvilinear coordinates.&quot;</a> Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved: 3 Feb. 2017.</li>
+<li><p>Alonso Sepúlveda Soto. Física matemática. Ciencia y Tecnología. Universidad de Antioquia, 2009.</p></li>
+<li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Curvilinear_coordinates">&quot;Curvilinear coordinates.&quot;</a> Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved: 3 Feb. 2017.</p></li>
 </ul>
 </div>
 </body>

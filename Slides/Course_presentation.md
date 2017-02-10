@@ -9,13 +9,16 @@
 
 # Objectives
 
-At the end of the course the student should be able to use mathematical methods to solve engineering problems. Particularly, the student should
+At the end of the course the student should be able to use mathematical methods
+to solve engineering problems. Particularly, the student should
 
 - Understand different vector operators in several coordinate systems.
 - Solve ordinary differential equation of second order.
-- Apply mathematical methods to solve common boundary value problems: Laplace, Poisson, Wave and Heat equations.
+- Apply mathematical methods to solve common boundary value problems: Laplace,
+  Poisson, Wave and Heat equations.
 - Identify types of equations and decide the method to solve it.
-- Identify the origin of some special functions and understand some of their properties.
+- Identify the origin of some special functions and understand some of their
+  properties.
 
 ------------------
 
@@ -57,13 +60,16 @@ At the end of the course the student should be able to use mathematical methods 
 
 # Textbook
 
-The main book for the course is "Física Matemática" by Alonso Sepúlveda. Also, the book "Advanced Engineering Mathematics" by Kreyszig is recommended (there are several copies in the library).
+The main book for the course is "Física Matemática" by Alonso Sepúlveda. Also,
+the book "Advanced Engineering Mathematics" by Kreyszig is recommended (there
+are several copies in the library).
 
 ------------------
 
 # GitHub repository
 
-I will create contents such as Jupyter Notebooks and Slides (and maybe some other types) regularly into the following repository
+I will create contents such as Jupyter Notebooks and Slides (and maybe some
+other types) regularly into the following repository
 
     https://github.com/nicoguaro/AdvancedMath
 
@@ -71,13 +77,17 @@ I will create contents such as Jupyter Notebooks and Slides (and maybe some othe
 
 # Python Distribution
 
-I recommend to use [Anaconda](https://www.continuum.io/downloads) as Python distribution, it includes SymPy and Jupyter already.
+I recommend to use [Anaconda](https://www.continuum.io/downloads) as Python
+distribution, it includes SymPy and Jupyter already.
 
-A good Python tutorial for scientific purpose is 
+A good Python tutorial for scientific purpose is
 
-- Gaël Varoquaux, Emmanuelle Gouillart and Olav Vahtras. [Scipy Lecture Notes](http://www.scipy-lectures.org/index.html)
+- Gaël Varoquaux, Emmanuelle Gouillart and Olav Vahtras.
+  [Scipy Lecture Notes](http://www.scipy-lectures.org/index.html)
 
-And I wrote a short tutorial for SymPy. You can find it in the course GitHub's repository or follow this [link](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy%20in%2010%20minutes.ipynb).
+And I wrote a short tutorial for SymPy. You can find it in the course GitHub's
+repository or follow this
+[link](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy%20in%2010%20minutes.ipynb).
 
 ------------------
 
@@ -85,7 +95,8 @@ And I wrote a short tutorial for SymPy. You can find it in the course GitHub's r
 
 Main books:
 
-- Alonso Sepúlveda Soto. Física matemática. Ciencia y Tecnología. Universidad de Antioquia, 2009.
+- Alonso Sepúlveda Soto. Física matemática. Ciencia y Tecnología. Universidad
+  de Antioquia, 2009.
 - Erwin Kreyszig. Advanced engineering mathematics. John Wiley & Sons, 2010.
 
 For further reference
