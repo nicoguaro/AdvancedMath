@@ -7,6 +7,7 @@ This is a repository with material for the course Advanced Mathematics for Engin
 - Notebooks: This folder contains several Jupyter Notebooks intended to teach SymPy
     - [SymPy in 10 minutes](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy%20in%2010%20minutes.ipynb)
     - [Linear Algebra in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Linear%20Algebra.ipynb)
+    - [Coordinate systems](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Coordinates.ipynb)
     - [Ordinary differential equations in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/ODE.ipynb)
 
 - Slides
