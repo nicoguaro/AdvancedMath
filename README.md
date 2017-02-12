@@ -1,6 +1,7 @@
 # Advanced Mathematics for Engineers
 
-This is a repository with material for the course Advanced Mathematics for Engineers. The program of the course is located [here](./program.md).
+This is a repository with material for the course Advanced Mathematics for Engineers. The program of the course is located [here](./program.md). A _commented_ list of
+references can be found [here](./references.md).
 
 ## Contents
 

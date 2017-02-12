@@ -161,11 +161,11 @@ by Kreyszig.
 
 3.  Erwin Kreyszig. Advanced engineering mathematics. John Wiley & Sons, 2010.
 
-4.  Antonio Velasco and Ruben Sánchez. Curso Básico de Álgebra Lineal. Comex,
-    1980.
+4.  Antonio Velasco and Ruben Sánchez. Curso Básico de Álgebra Lineal (Spanish).
+    Comex, 1980.
 
-5.  Alonso Sepulveda Soto. Fı́sica matemática. Ciencia y Tecnologı́a. Universidad
-    de Antioquia, 2009.
+5.  Alonso Sepulveda Soto. Fı́sica matemática (Spanish). Ciencia y Tecnologı́a.
+    Universidad de Antioquia, 2009.
 
 6.  FWJ Olver, DW Lozier, RF Boisvert, and CW Clark. [NIST digital library of mathematical functions.](http://dlmf.nist.gov). NIST, 2010.
 
