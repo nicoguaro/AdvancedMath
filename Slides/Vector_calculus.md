@@ -27,16 +27,16 @@ Two common examples of curvilinear coordinates are
 ### Cylindrical coordinates
 
 $$\begin{align}
-x =& \rho \cos\phi\\
-y =& \rho \sin\phi\\
+x =& \rho \cos\varphi\\
+y =& \rho \sin\varphi\\
 z =& z
 \end{align}$$
 
 ### Spherical coordinates
 
 $$\begin{align}
-x =& r \sin\theta \cos\phi\\
-y =& r \sin\theta \sin\phi\\
+x =& r \sin\theta \cos\varphi\\
+y =& r \sin\theta \sin\varphi\\
 z =& r \cos\theta
 \end{align}$$
 
@@ -108,7 +108,7 @@ knows as fields. There are fields of different nature:
 
 - Scalar fields (temperature, pressure): $\phi = zy^3 - x^2$
 
-- Vector fields (velocidty, displacement): $\mathbf{A} = yz^2\hat{\imath} - 2zx^3\hat{\jmath} + xy^2\hat{k}$
+- Vector fields (velocity, displacement): $\mathbf{A} = yz^2\hat{\imath} - 2zx^3\hat{\jmath} + xy^2\hat{k}$
 
 - Tensor fields (strain, stresses):
 
@@ -136,7 +136,7 @@ $$\begin{align}
 \frac{\hat{\mathbf{e}}_\varphi}{h_\varphi}\frac{\partial \phi}{\partial \varphi} \\
     &= \hat{\mathbf{e}}_r \frac{\partial \phi}{\partial r} +
      + \frac{\hat{\mathbf{e}}_\theta}{r}\frac{\partial \phi}{\partial \theta}
-     + \frac{\hat{\mathbf{e}}_\varphi}{r\sin\theta}\frac{\partial \phi}{\partial \theta}
+     + \frac{\hat{\mathbf{e}}_\varphi}{r\sin\theta}\frac{\partial \phi}{\partial \varphi}
 \end{align}$$
 
 ------------------
@@ -178,11 +178,11 @@ We can understand the divergence as the flux per unit volume
 $\operatorname{div}\mathbf{B} = d\phi/dV$, and we can extend this calculation
 to a finite surface
 
-$$\phi = \oint_S \mathbf{B} d\mathbf{S} = \int_V \operatorname{div}\mathbf{B} dV\, ,$$
+$$\phi = \oint_S \mathbf{B}\cdot d\mathbf{S} = \int_V \operatorname{div}\mathbf{B} dV\, ,$$
 
 The second part is the Gauss theorem
 
-$$\oint_S \mathbf{B} d\mathbf{S} = \int_V \operatorname{div}\mathbf{B} dV\, .$$
+$$\oint_S \mathbf{B}\cdot d\mathbf{S} = \int_V \operatorname{div}\mathbf{B} dV\, .$$
 
 ------------------
 
@@ -243,4 +243,6 @@ Web. 15 Feb. 2017.
 - Wikipedia contributors. ["Curl (mathematics)."](https://en.wikipedia.org/wiki/Curl_(mathematics))
 Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved:
 Web. 15 Feb. 2017. 
+
+- Wikipedia contributors. ["Laplace operator."](https://en.wikipedia.org/wiki/Laplace_operator) Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved: Web. 17 Feb. 2017. 
 
