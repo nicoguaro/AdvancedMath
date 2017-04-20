@@ -16,6 +16,7 @@
     href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
    href="style.css" />
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
     charset="utf-8" type="text/javascript"></script>
 </head>
@@ -27,6 +28,89 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
   </p>
   <p class="date">April 16, 2017</p>
 </div>
+<div id="inner-products" class="slide section level1">
+<h1>Inner products</h1>
+<p>Inner products let us extend geometrical notions such as length of a vector or angle between vectors for vector spaces that are more abstract than <span class="math inline">\(\mathbb{R}^2\)</span> or <span class="math inline">\(\mathbb{R}^3\)</span>. It also let us define the orthogonality between vectors. Inner product spaces generalize the notion of Euclidean spaces to any dimension.</p>
+</div>
+<div id="orthogonal-basis" class="slide section level1">
+<h1>Orthogonal basis</h1>
+<p>An orthogonal basis for an inner product spaces <span class="math inline">\(V\)</span>, is a basis for <span class="math inline">\(V\)</span> whose vectors are mutually orthogonal. The angle between vectors (<span class="math inline">\(\theta\)</span>) is defined using the inner product as</p>
+<p><span class="math display">\[\theta = \arccos\left(\frac{\langle x, y\rangle}{\Vert x\Vert\, \Vert y\Vert}\right) \, .\]</span></p>
+<p>If they have magnitude 1, then the base is called <em>orthonormal</em>.</p>
+</div>
+<div id="examples-of-discrete-orthogonal-basis-fourier-basis" class="slide section level1">
+<h1>Examples of (discrete) orthogonal basis: Fourier basis</h1>
+<p><span class="math display">\[\left\lbrace \frac{1}{\sqrt{\pi}} \sin(nx),
+  \frac{1}{\sqrt{\pi}} \cos(nx),
+  \frac{1}{\sqrt{2\pi}}\middle|
+  \forall n \in \mathbb{N}, \forall x\in [-\pi, \pi]\right\rbrace\]</span></p>
+<p><img src="./img/Fourier_series_integral_identities.gif"
+    width=800
+    class="centObj"></p>
+</div>
+<div id="examples-of-discrete-orthogonal-basis-hermite-polynomials" class="slide section level1">
+<h1>Examples of (discrete) orthogonal basis: Hermite polynomials</h1>
+<p><span class="math display">\[\left\lbrace (-1)^n e^{x^2}\frac{d^n}{dx^n} e^{-x^2},\middle|
+  \forall n \in \mathbb{N}, \forall x\in [-\infty, \infty]\right\rbrace\]</span></p>
+<p>with orthogonality as</p>
+<p><span class="math display">\[\int\limits_{-\infty}^{\infty} H_m(x) H_n(x) e^{-x^2} dx = \sqrt{\pi}s^n n! \delta_{mn}\]</span></p>
+<p><img src="./img/Hermite_poly_phys.svg"
+    width=800
+    class="centObj"></p>
+</div>
+<div id="examples-of-discrete-orthogonal-basischebyshev-polynomials" class="slide section level1">
+<h1>Examples of (discrete) orthogonal basis:Chebyshev polynomials</h1>
+<p>They are defined by the recursion relation</p>
+<p><span class="math display">\[T_0(x) = 1,\, T_1(x) = x,\, T_{n+1} = 2x T_n(x) - T_{n-1}(x),\quad \forall x\in [-1,1]\]</span></p>
+<p>with orthogonality as</p>
+<p><span class="math display">\[\int\limits_{-1}^{1} T_m(x) T_n(x) \frac{dx}{\sqrt{1 - x^2}} =
+  \begin{cases}
+    0 &amp;n\neq m \\
+    \pi &amp;n=m=0\\
+    \pi/2 &amp;n=m\neq 0\end{cases}\]</span></p>
+<p><img src="./img/Chebyshev_Polynomials_of_the_First_Kind.svg"
+    width=800
+    class="centObj"></p>
+</div>
+<div id="fourier-analysis-definition" class="slide section level1">
+<h1>Fourier analysis: definition</h1>
+<p>From Wikipedia</p>
+<blockquote>
+<p>In mathematics, Fourier analysis is the study of the way general functions may be represented or approximated by sums of simpler trigonometric functions. Fourier analysis grew from the study of Fourier series, and is named after Joseph Fourier, who showed that representing a function as a sum of trigonometric functions greatly simplifies the study of heat transfer.</p>
+</blockquote>
+</div>
+<div id="fourier-analysis-scientific-applications" class="slide section level1">
+<h1>Fourier analysis: scientific applications</h1>
+<p>Fourier analysis has many scientific applications:</p>
+<ul>
+<li><p>Signal Processing. It may be the best application of Fourier analysis.</p></li>
+<li><p>Approximation Theory. We use Fourier series to write a function as a trigonometric polynomial.</p></li>
+<li><p>Control Theory. The Fourier series of functions in the differential equation often gives some prediction about the behavior of the solution of differential equation. They are useful to find out the dynamics of the solution.</p></li>
+<li><p>Partial Differential equation. We use it to solve higher order partial differential equations by the method of separation of variables.</p></li>
+</ul>
+</div>
+<div id="fourier-analysis-applications" class="slide section level1">
+<h1>Fourier analysis: applications</h1>
+<p>Some examples include:</p>
+<ul>
+<li><p>JPG image compression.</p></li>
+<li><p>MP3 sound compression.</p></li>
+<li><p>Image processing to remove periodic or anisotropic artifacts such as jaggies from interlaced video.</p></li>
+<li><p>X-ray crystallography to reconstruct a crystal structure from its diffraction pattern.</p></li>
+</ul>
+</div>
+<div id="fourier-series" class="slide section level1">
+<h1>Fourier series</h1>
+<p>A Fourier series allow us to represent a (periodic) function as the sum of sine and cosine functions.</p>
+<p>For a function <span class="math inline">\(f(x)\)</span> defined over <span class="math inline">\([x_0, x_0 + P]\)</span>, that is continuous or piecewise continuous, we write</p>
+<p><span class="math display">\[ f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty}\left[
+  a_n \cos\left(\frac{2\pi nx}{P}\right) +
+  b_n \sin\left(\frac{2\pi nx}{P}\right) \right]\]</span></p>
+<p>where the coefficients are obtained computing the inner product with the elements of the base, i.e.</p>
+<p><span class="math display">\[a_0 = \frac{2}{P}\int_{x_0}^{x_0+P} f(x)\, dx\\
+a_n = \frac{2}{P}\int_{x_0}^{x_0+P} \cos\left(\frac{2\pi nx}{P}\right) f(x)\, dx\\
+b_n = \frac{2}{P}\int_{x_0}^{x_0+P} \sin\left(\frac{2\pi nx}{P}\right) f(x)\, dx\]</span></p>
+</div>
 <div id="fourier-series-visualisation" class="slide section level1">
 <h1>Fourier series visualisation</h1>
 <iframe width="960" height="720" src="./img/Fourier_vis.html" frameborder="0" allowfullscreen class="centObj">
@@ -35,7 +119,12 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
 <div id="references" class="slide section level1">
 <h1>References</h1>
 <ul>
-<li>Alonso Sepúlveda Soto. Física matemática. Ciencia y Tecnología. Universidad de Antioquia, 2009.</li>
+<li><p>Alonso Sepúlveda Soto. Física matemática. Ciencia y Tecnología. Universidad de Antioquia, 2009.</p></li>
+<li><p>Pierre Guilleminot's. <a href="https://bl.ocks.org/jinroh/7524988">Fourier series visualisation with d3.js.</a>, 2016.</p></li>
+<li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Fourier_analysis">&quot;Fourier analysis.&quot;</a> Wikipedia, The Free Encyclopedia</p></li>
+<li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Hermite_polynomials">&quot;Hermite polynomials.&quot;</a> Wikipedia, The Free Encyclopedia.</p></li>
+<li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Fourier_series">&quot;Fourier series.&quot;</a> Wikipedia, The Free Encyclopedia.</p></li>
+<li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Chebyshev_polynomials">&quot;Chebyshev polynomials.&quot;</a> Wikipedia, The Free Encyclopedia.</p></li>
 </ul>
 </div>
 </body>
