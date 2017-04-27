@@ -59,7 +59,7 @@ $$\int\limits_{-\infty}^{\infty} H_m(x) H_n(x) e^{-x^2} dx = \sqrt{\pi}s^n n! \d
 
 ------------------
 
-# Examples of (discrete) orthogonal basis:Chebyshev polynomials
+# Examples of (discrete) orthogonal basis: Chebyshev polynomials
 
 They are defined by the recursion relation
 
@@ -158,12 +158,90 @@ b_n = \frac{2}{P}\int_{x_0}^{x_0+P} \sin\left(\frac{2\pi nx}{P}\right) f(x)\, dx
  
 ------------------
 
+# Orthogonal basis: continuum case
+
+A set $\lbrace \phi(k, x)\rbrace$ with $x$ and $k$ defined over $(a, b)$, and
+$(c, d)$ are orthogonal with weight $w(x)$ ($w(x)$ real) if:
+
+$$\int\limits_{a}^{b} w(x) \phi^* (k, x) \phi(k', x)\, dx = \delta(k - k')\, ,
+  \quad x\in(a, b),\, k\in(c, d)\, .$$
+  
+------------------
+
+# Orthogonal basis: continuum case
+
+If the basis is complete we can write a function $f(x)$ as
+
+$$f(x) = \int\limits_{a}^{b} C(k) \phi(k', x)\, dx\, ,$$
+
+with 
+
+$$C(x) = \int\limits_{a}^{b} C(x') w(x')\phi(k, x')\, dx'\, .$$
+
+$C(k)$ is known as the tranform of $f(x)$.
+
+------------------
+
+# Examples of (continuous) orthogonal basis: Fourier transform
+
+When we choose the basis functions $\lbrace \frac{e^{ikx}}{\sqrt{2\pi}}\rbrace$,
+we can write a function $f(x)$, that is piecewise continuous and does not grow
+faster than exponentially, as
+
+$$f(x) = \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty}F(k) e^{ikx}\, dx\, .$$
+
+Using the orthonormality condition
+
+$$\int\limits_{-\infty}^{\infty} e^{i(k -k') x}dx = 2\pi \delta(k - k')\, ,$$
+
+we can write
+
+$$F(k) = \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty}f(x) e^{-ikx}\, dx\, .$$
+
+------------------
+
+# Example of Fourier transform
+
+We can compute the Fourier transform of a Gaussian function
+
+$$f(x) = e^{-\alpha^2 x^2},\quad x\in(-\infty, \infty)$$
+
+Using the definition and proceeding with the integral we get
+
+\begin{align}
+  F(k) &= \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} e^{-\alpha^2(x^2 + ikx/\alpha^2)} dx\\
+       &= \frac{e^{-k/4\alpha^2}}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} e^{-\alpha^2(x + ikx/2\alpha^2)^2} dx\\
+       &= \frac{1}{\sqrt{\pi} \alpha} e^{-k^2/4\alpha^2} \, .
+\end{align}
+
+------------------
+
+# Visualization of Fourier Tranform
+
+
+<img src="./img/Fourier_transform_time_and_frequency_domains.gif"
+    width=800
+    class="centObj">
+    
+------------------
+
+# Visualization of Fourier Tranform
+
+
+<img src="./img/Continuous_Fourier_transform_of_rect_and_sinc_functions.gif"
+    width=800
+    class="centObj">
+    
+------------------
+
 # References
 
 - Alonso Sepúlveda Soto. Física matemática. Ciencia y Tecnología. Universidad
   de Antioquia, 2009.
 
 - Pierre Guilleminot's. [Fourier series visualisation with d3.js.](https://bl.ocks.org/jinroh/7524988), 2016.
+
+
 
 - Wikipedia contributors. ["Fourier analysis."](https://en.wikipedia.org/wiki/Fourier_analysis)
   Wikipedia, The Free Encyclopedia
@@ -176,3 +254,6 @@ b_n = \frac{2}{P}\int_{x_0}^{x_0+P} \sin\left(\frac{2\pi nx}{P}\right) f(x)\, dx
 
 - Wikipedia contributors. ["Chebyshev polynomials."](https://en.wikipedia.org/wiki/Chebyshev_polynomials)
   Wikipedia, The Free Encyclopedia.
+  
+- Wikipedia contributors. ["Fourier transform."](https://en.wikipedia.org/wiki/Fourier_transform)
+  Wikipedia, The Free Encyclopedia. 

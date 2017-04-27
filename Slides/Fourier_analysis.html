@@ -58,8 +58,8 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
     width=800
     class="centObj"></p>
 </div>
-<div id="examples-of-discrete-orthogonal-basischebyshev-polynomials" class="slide section level1">
-<h1>Examples of (discrete) orthogonal basis:Chebyshev polynomials</h1>
+<div id="examples-of-discrete-orthogonal-basis-chebyshev-polynomials" class="slide section level1">
+<h1>Examples of (discrete) orthogonal basis: Chebyshev polynomials</h1>
 <p>They are defined by the recursion relation</p>
 <p><span class="math display">\[T_0(x) = 1,\, T_1(x) = x,\, T_{n+1} = 2x T_n(x) - T_{n-1}(x),\quad \forall x\in [-1,1]\]</span></p>
 <p>with orthogonality as</p>
@@ -116,6 +116,52 @@ b_n = \frac{2}{P}\int_{x_0}^{x_0+P} \sin\left(\frac{2\pi nx}{P}\right) f(x)\, dx
 <iframe width="960" height="720" src="./img/Fourier_vis.html" frameborder="0" allowfullscreen class="centObj">
 </iframe>
 </div>
+<div id="orthogonal-basis-continuum-case" class="slide section level1">
+<h1>Orthogonal basis: continuum case</h1>
+<p>A set <span class="math inline">\(\lbrace \phi(k, x)\rbrace\)</span> with <span class="math inline">\(x\)</span> and <span class="math inline">\(k\)</span> defined over <span class="math inline">\((a, b)\)</span>, and <span class="math inline">\((c, d)\)</span> are orthogonal with weight <span class="math inline">\(w(x)\)</span> (<span class="math inline">\(w(x)\)</span> real) if:</p>
+<p><span class="math display">\[\int\limits_{a}^{b} w(x) \phi^* (k, x) \phi(k&#39;, x)\, dx = \delta(k - k&#39;)\, ,
+  \quad x\in(a, b),\, k\in(c, d)\, .\]</span></p>
+</div>
+<div id="orthogonal-basis-continuum-case-1" class="slide section level1">
+<h1>Orthogonal basis: continuum case</h1>
+<p>If the basis is complete we can write a function <span class="math inline">\(f(x)\)</span> as</p>
+<p><span class="math display">\[f(x) = \int\limits_{a}^{b} C(k) \phi(k&#39;, x)\, dx\, ,\]</span></p>
+<p>with</p>
+<p><span class="math display">\[C(x) = \int\limits_{a}^{b} C(x&#39;) w(x&#39;)\phi(k, x&#39;)\, dx&#39;\, .\]</span></p>
+<p><span class="math inline">\(C(k)\)</span> is known as the tranform of <span class="math inline">\(f(x)\)</span>.</p>
+</div>
+<div id="examples-of-continuous-orthogonal-basis-fourier-transform" class="slide section level1">
+<h1>Examples of (continuous) orthogonal basis: Fourier transform</h1>
+<p>When we choose the basis functions <span class="math inline">\(\lbrace \frac{e^{ikx}}{\sqrt{2\pi}}\rbrace\)</span>, we can write a function <span class="math inline">\(f(x)\)</span>, that is piecewise continuous and does not grow faster than exponentially, as</p>
+<p><span class="math display">\[f(x) = \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty}F(k) e^{ikx}\, dx\, .\]</span></p>
+<p>Using the orthonormality condition</p>
+<p><span class="math display">\[\int\limits_{-\infty}^{\infty} e^{i(k -k&#39;) x}dx = 2\pi \delta(k - k&#39;)\, ,\]</span></p>
+<p>we can write</p>
+<p><span class="math display">\[F(k) = \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty}f(x) e^{-ikx}\, dx\, .\]</span></p>
+</div>
+<div id="example-of-fourier-transform" class="slide section level1">
+<h1>Example of Fourier transform</h1>
+<p>We can compute the Fourier transform of a Gaussian function</p>
+<p><span class="math display">\[f(x) = e^{-\alpha^2 x^2},\quad x\in(-\infty, \infty)\]</span></p>
+<p>Using the definition and proceeding with the integral we get</p>
+\begin{align}
+  F(k) &amp;= \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} e^{-\alpha^2(x^2 + ikx/\alpha^2)} dx\\
+       &amp;= \frac{e^{-k/4\alpha^2}}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} e^{-\alpha^2(x + ikx/2\alpha^2)^2} dx\\
+       &amp;= \frac{1}{\sqrt{\pi} \alpha} e^{-k^2/4\alpha^2} \, .
+\end{align}
+</div>
+<div id="visualization-of-fourier-tranform" class="slide section level1">
+<h1>Visualization of Fourier Tranform</h1>
+<p><img src="./img/Fourier_transform_time_and_frequency_domains.gif"
+    width=800
+    class="centObj"></p>
+</div>
+<div id="visualization-of-fourier-tranform-1" class="slide section level1">
+<h1>Visualization of Fourier Tranform</h1>
+<p><img src="./img/Continuous_Fourier_transform_of_rect_and_sinc_functions.gif"
+    width=800
+    class="centObj"></p>
+</div>
 <div id="references" class="slide section level1">
 <h1>References</h1>
 <ul>
@@ -125,6 +171,7 @@ b_n = \frac{2}{P}\int_{x_0}^{x_0+P} \sin\left(\frac{2\pi nx}{P}\right) f(x)\, dx
 <li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Hermite_polynomials">&quot;Hermite polynomials.&quot;</a> Wikipedia, The Free Encyclopedia.</p></li>
 <li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Fourier_series">&quot;Fourier series.&quot;</a> Wikipedia, The Free Encyclopedia.</p></li>
 <li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Chebyshev_polynomials">&quot;Chebyshev polynomials.&quot;</a> Wikipedia, The Free Encyclopedia.</p></li>
+<li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Fourier_transform">&quot;Fourier transform.&quot;</a> Wikipedia, The Free Encyclopedia.</p></li>
 </ul>
 </div>
 </body>
