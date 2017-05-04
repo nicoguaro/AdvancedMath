@@ -172,11 +172,11 @@ $$\int\limits_{a}^{b} w(x) \phi^* (k, x) \phi(k', x)\, dx = \delta(k - k')\, ,
 
 If the basis is complete we can write a function $f(x)$ as
 
-$$f(x) = \int\limits_{a}^{b} C(k) \phi(k', x)\, dx\, ,$$
+$$f(x) = \int\limits_{c}^{d} C(k) \phi(k, x)\, dk\, ,$$
 
 with 
 
-$$C(x) = \int\limits_{a}^{b} C(x') w(x')\phi(k, x')\, dx'\, .$$
+$$C(k) = \int\limits_{a}^{b} f(x) w(x)\phi(k, x)\, dx\, .$$
 
 $C(k)$ is known as the tranform of $f(x)$.
 
@@ -240,8 +240,6 @@ Using the definition and proceeding with the integral we get
   de Antioquia, 2009.
 
 - Pierre Guilleminot's. [Fourier series visualisation with d3.js.](https://bl.ocks.org/jinroh/7524988), 2016.
-
-
 
 - Wikipedia contributors. ["Fourier analysis."](https://en.wikipedia.org/wiki/Fourier_analysis)
   Wikipedia, The Free Encyclopedia
