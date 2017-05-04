@@ -11,7 +11,7 @@ references can be found [here](./references.md).
     - [Vector calculus and coordinate systems](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Vector_calculus.ipynb)
     - [Ordinary differential equations in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/ODE.ipynb)
     - [Laplace Transform](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Laplace_transform.ipynb)
-    - [Orthonormal basis and Fourier Analysis](https://github.com/nicoguaro/AdvancedMath/blob/master/Notebooks/Fourier_analysis.ipynb)
+    - [Orthonormal basis and Fourier Analysis](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Fourier_analysis.ipynb)
 
 - Slides
     - [Course presentation](https://cdn.rawgit.com/nicoguaro/AdvancedMath/cddc9b94/Slides/Course_presentation.html)
