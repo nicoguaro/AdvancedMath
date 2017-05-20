@@ -1,6 +1,9 @@
 """
-# illustration of the heat equation
-# Solve the heat equation using finite differences and Forward Euler
+Illustration of the heat equation
+
+Solve the heat equation using finite differences and Forward Euler.
+
+Based on: https://commons.wikimedia.org/wiki/File:Heat_eqn.gif
 """
 
 from __future__ import division, print_function
