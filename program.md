@@ -31,7 +31,7 @@ should
 
 ## Methodology
 
-Lectures, Examples, recommended reading. The course is divided in 6 units,
+Lectures, Examples, recommended reading. The course is divided in 5 units,
 emphasizing the concepts. For this reason is suggested the use of a [Computer
 Algebra System (CAS)](https://en.wikipedia.org/wiki/Computer_algebra_system)
 such as Maple, [Maxima](http://maxima.sourceforge.net/) or
@@ -41,64 +41,44 @@ reinforce the understanding of the topics.
 
 ## Contents
 
-### Linear Algebra Review (2 weeks)
+### Linear Algebra Review (1 week)
 
 It is suggested to watch the series of videos
 ["Essence of Linear Algebra"](http://www.3blue1brown.com/essence-of-linear-algebra/).
 
-1.  Operativity
+1.  Linear transformations
 
-2.  Systems of equations
+2.  Vector spaces and bases
 
-3.  Linear transformations
-
-4.  Vector spaces and bases
-
-5.  Eigenvalue and Eigenvector problems
-
+3.  Eigenvalue and Eigenvector problems
 
 ### Vector calculus and coordinates (3 weeks)
 
-1.  Coordinate Systems
+1.  Vectors and tensors
 
-2.  Line, surface and volume differentials
+2.  Coordinate Systems
 
-3.  Differential operators
+3.  Line, surface and volume differentials
 
-4.  Vector identities
+4.  Differential operators
 
-5.  Integral theorems
+5.  Vector identities
 
-6.  Dyads and tensors
+6.  Integral theorems
 
-7.  Coordinate systems construction
-
-### Ordinary differential equations (3 weeks)
+### Ordinary differential equations (4 weeks)
 
 1.  First order differential equations
 
 2.  Systems of differential equations
 
-3.  Qualitative methods for non-linear systems
+3.  Power series solutions
 
-4.  Power series solutions
+4.  Frobenius method
 
-5.  Frobenius methods
+5.  Laplace transform method
 
-6.  Bessel Functions
-
-7.  Sturm-Liouville problems and orthogonal functions
-
-
-### Laplace Transform (2 weeks)
-
-1.  Laplace transform and Inverse Laplace transform
-
-2.  Transformation of derivatives and integrals
-
-3.  Differential equations
-
-4. Convolutions
+6.  Qualitative methods for non-linear systems
 
 ### Orthogonal bases and Fourier analysis (3 weeks)
 
@@ -110,7 +90,7 @@ It is suggested to watch the series of videos
 
 4.  Fourier Integrals
 
-### Partial differential equations (4 weeks)
+### Partial differential equations (5 weeks)
 
 1.  Classification of partial differential equations
 
@@ -125,6 +105,9 @@ It is suggested to watch the series of videos
     4.  Navier-Cauchy equation
 
 3.  Separation of variables
+
+    1.  Sturm-Liouville problems
+    2.  Bessel functions
 
 4.  Green Functions solution
 
@@ -155,7 +138,7 @@ by Kreyszig.
 
 ## References
 
-1.  SymPy Development Team. [Sympy’s documentation.]( http://docs.sympy.org/latest/index.html), 2016.
+1.  SymPy Development Team. [Sympy’s documentation.](http://docs.sympy.org/latest/index.html), 2016.
 
 2.  Grant Sanderson. [Essence of linear algebra.](http://www.3blue1brown.com/essence-of-linear-algebra/), 2016.
 
