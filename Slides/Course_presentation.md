@@ -24,37 +24,28 @@ to solve engineering problems. Particularly, the student should
 
 # Evaluation
 
-- Homework 20%
+- Homework 30%
 - 2 Midterms 40%
-- Quizzes 10%
 - Final exam 30%
 
 ------------------
 
 # Evaluation: Description
 
-- First midterm: Written examination (March 9)
+- First midterm: Written examination (Week 6)
 - Second midterm: Take-home examination
-    - Starts: April 27
-    - Ends: May 4
+    - Starts: Week 11
+    - Ends: Week 12
 - Final exam: "Small" project. Final report in paper format.
-    - Topic selection: March 30
-    - Deadline: June 2
-- Quizzes will be on the following dates
-    - January 26
-    - February 9
-    - March 2
-    - March 30
-    - April 20
-    - May 11
-- Homework is due on the following dates
-    - January 29
-    - February 2
-    - March 2
-    - March 30
-    - April 20
-    - May 11
-    - May 25
+    - Topic selection: Week 4
+    - Partial report: Week 10
+    - Deadline: Week 17
+- Homework is due on the following weeks
+    - Week 2
+    - Week 5
+    - Week 9
+    - Week 12
+    - Week 16
 
 ------------------
 
@@ -86,7 +77,7 @@ A good Python tutorial for scientific purpose is
   [Scipy Lecture Notes](http://www.scipy-lectures.org/index.html)
 
 And I wrote a short tutorial for SymPy. You can find it in the course GitHub's
-repository or follow this
+repository, or follow this
 [link](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy%20in%2010%20minutes.ipynb).
 
 ------------------
