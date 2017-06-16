@@ -18,12 +18,6 @@ and other topics of interest.
   extension, that would not make it suitable for a one-semester course. But,
   definitely a good book to have in one's bookshelf.
 
-- FWJ Olver, DW Lozier, RF Boisvert, and CW Clark. [NIST digital library of mathematical functions.](http://dlmf.nist.gov). NIST, 2010.
-
-  The updated version of the classical _Handbook of Mathematical Functions_.
-  It is an online version, so you can access it wherever you are (with an
-  internet connection, of course).
-
 - Stanley J Farlow. Partial differential equations for scientists and
   engineers. Courier Corporation, 2012.
 
@@ -39,11 +33,6 @@ and other topics of interest.
   it does not describe all the common methods for second order equations as is
   common in most ODE books. The emphasis is on concepts and in matrix methods
   that are more algorithmic, in my opinion.
-
--  Grant Sanderson. [Essence of linear algebra.](http://www.3blue1brown.com/essence-of-linear-algebra/), 2016.
-
-  A series of videos that clearly explain the concepts behind the most Common
-  topics in linear algebra.
 
 - Antonio Velasco and Ruben Sánchez. Curso Básico de Álgebra Lineal (Spanish).
   Comex, 1980.
@@ -61,6 +50,26 @@ and other topics of interest.
   I like this calculus book, but it is probably because I studied in my
   undergrad with it. Regarding vector calculus, I find more useful the book
   by Stewart.
+
+
+
+## Freely-available references
+
+-  Grant Sanderson. [Essence of linear algebra.](http://www.3blue1brown.com/essence-of-linear-algebra/), 2016.
+
+  A series of videos that clearly explain the concepts behind the most Common
+  topics in linear algebra.
+
+- Lloyd Trefethen and Kristine Embree (Editors). [The (Unfinished) PDE Coffee Table Book.](https://people.maths.ox.ac.uk/trefethen/pdectb.html), 2011.
+
+This is a collection of 2-pages spreads talking about relevant information
+for different partial differential equations.
+
+- FWJ Olver, DW Lozier, RF Boisvert, and CW Clark. [NIST digital library of mathematical functions.](http://dlmf.nist.gov). NIST, 2010.
+
+  The updated version of the classical _Handbook of Mathematical Functions_.
+  It is an online version, so you can access it wherever you are (with an
+  internet connection, of course).
 
 - Ondřej Čertík. [Theoretical Physics Reference](http://www.theoretical-physics.net/dev/index.html), 2011.
 
