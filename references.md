@@ -12,7 +12,7 @@ and other topics of interest.
   most of the relevant topics and it is short enough. The only caveat is the
   jargon, that it might be a little bit too specific for physicists.
 
--  Erwin Kreyszig. Advanced engineering mathematics. John Wiley & Sons, 2010.
+- Erwin Kreyszig. Advanced engineering mathematics. John Wiley & Sons, 2010.
 
   A good book in Advanced Mathematics (for engineers). The only but is its
   extension, that would not make it suitable for a one-semester course. But,
