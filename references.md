@@ -52,18 +52,17 @@ and other topics of interest.
   by Stewart.
 
 
-
 ## Freely-available references
 
--  Grant Sanderson. [Essence of linear algebra.](http://www.3blue1brown.com/essence-of-linear-algebra/), 2016.
+- Grant Sanderson. [Essence of linear algebra.](http://www.3blue1brown.com/essence-of-linear-algebra/), 2016.
 
   A series of videos that clearly explain the concepts behind the most Common
   topics in linear algebra.
 
 - Lloyd Trefethen and Kristine Embree (Editors). [The (Unfinished) PDE Coffee Table Book.](https://people.maths.ox.ac.uk/trefethen/pdectb.html), 2011.
 
-This is a collection of 2-pages spreads talking about relevant information
-for different partial differential equations.
+  This is a collection of 2-pages spreads talking about relevant information
+  for different partial differential equations.
 
 - FWJ Olver, DW Lozier, RF Boisvert, and CW Clark. [NIST digital library of mathematical functions.](http://dlmf.nist.gov). NIST, 2010.
 
@@ -77,3 +76,19 @@ for different partial differential equations.
   with source code stored in  [GitHub](https://github.com/certik/theoretical-physics).
   The book contains notes related to theoretical and mathematical physics and
   snippets of code in SymPy.
+
+- Hans Petter Langtangen, Svein Linge ["Finite Difference Computing with PDEs."](https://link.springer.com/book/10.1007/978-3-319-55456-3),
+  Springer, 2017.
+
+  This is a book on Finite Difference methods for PDEs. It has a stronger
+  emphasis on computer implementation and verification, key aspects of
+  scientific computing.
+
+- Hans Petter Langtangen, Geir K. Pedersen  ["Scaling of Differential Equations."](https://link.springer.com/book/10.1007/978-3-319-32726-6),
+  Springer, 2017.
+
+  This book is centered on scaling of differential equations. Rewriting
+  differential equations in dimensionless form has several advantages.
+  These advantages are also present in numerical solutions.
+
+
