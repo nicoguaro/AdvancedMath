@@ -2,7 +2,7 @@
 % Nicolás Guarín-Zapata
     email: nguarinz@eafit.edu.co
     github: nicoguaro
-% February 2, 2017
+% July 26, 2017
 
 
 ------------------
@@ -26,7 +26,7 @@ Let $V$ and $W$ be vector spaces over the same [field](https://en.wikipedia.org/
     frameborder="0"
     allowfullscreen
     class="centObj"></iframe>
-    
+
 ------------------
 
 # Applet: Linear transformations

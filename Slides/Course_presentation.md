@@ -1,8 +1,8 @@
 % Advanced Mathematics for Engineers
-% Nicolas Guarin-Zapata
+% Nicolás Guarín-Zapata
     email: nguarinz@eafit.edu.co
     github: nicoguaro
-% January 26, 2017
+% July 26, 2017
 
 
 ------------------
