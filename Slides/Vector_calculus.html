@@ -25,7 +25,70 @@
   <p class="author">
 Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
   </p>
-  <p class="date">February 9, 2017</p>
+  <p class="date">August 2, 2017</p>
+</div>
+<div id="tensors" class="slide section level1">
+<h1>Tensors</h1>
+<table>
+<tr>
+<td>
+<p>Depiction of the Cauchy stress tensor, a second-order tensor. The tensor's components, in a three-dimensional Cartesian coordinate system, form the matrix</p>
+<p><span class="math display">\[\begin{align}
+\sigma &amp; = \begin{bmatrix}\mathbf{T}^{(\mathbf{e}_1)} \mathbf{T}^{(\mathbf{e}_2)} \mathbf{T}^{(\mathbf{e}_3)} \\ \end{bmatrix} \\
+&amp; = \begin{bmatrix} \sigma_{11} &amp; \sigma_{12} &amp; \sigma_{13} \\ \sigma_{21} &amp; \sigma_{22} &amp; \sigma_{23} \\ \sigma_{31} &amp; \sigma_{32} &amp; \sigma_{33} \end{bmatrix}\\
+\end{align}\]</span></p>
+whose columns are the stresses (forces per unit area) acting on the <span class="math inline">\(\mathbf{e}_1\)</span> , <span class="math inline">\(\mathbf{e}_2\)</span>, and <span class="math inline">\(\mathbf{e}_3\)</span> faces of the cube.
+</td>
+<td>
+<img src="./img/Components_stress_tensor.svg"
+    width=600
+    class="centObj">
+</td>
+</tr>
+</table>
+</div>
+<div id="kronecker-delta" class="slide section level1">
+<h1>Kronecker Delta</h1>
+<p>The Kronecker delta is defined by</p>
+<p><span class="math display">\[\delta_{ij} = \begin{cases}
+1\quad i=j\\
+0\quad i\neq j
+\end{cases}\]</span></p>
+<p>and it can be thought as the components of the identity tensor.</p>
+</div>
+<div id="levi-civita-symbol" class="slide section level1">
+<h1>Levi-Civita symbol</h1>
+<table>
+<tr>
+<td>
+<p>It is defined by the cross product between element of an orthonormal basis</p>
+<p><span class="math display">\[\hat{\mathbf{e}}_i \times \hat{\mathbf{e}}_j = \sum_{k=1}^{3}\epsilon_{ijk} \hat{\mathbf{e}}_k\]</span></p>
+<p>with</p>
+<span class="math display">\[\begin{align}
+\epsilon_{ijk} &amp;= \frac{1}{2} (i - j)(j - k)(k - i)\\
+&amp;= \begin{cases}
+1\quad \text{even permutation}\\
+-1\quad \text{odd permutation}\\
+0\quad \text{repeated indices}\\
+\end{cases}
+\end{align}\]</span>
+</td>
+<td>
+<img src="./img/Epsilontensor.svg"
+    width=600
+    class="centObj">
+</td>
+</tr>
+</table>
+</div>
+<div id="some-operations-between-second-order-tensors" class="slide section level1">
+<h1>Some operations between second-order Tensors</h1>
+<ul>
+<li><p><span class="math inline">\(\underline{\underline{T}} \cdot \mathbf{A} = T_{ik} A_k \hat{\mathbf{e}}_i\)</span></p></li>
+<li><p><span class="math inline">\(\underline{\underline{T}} \times \mathbf{A} = \hat{\mathbf{e}}_i \epsilon_{jkl} \hat{\mathbf{e}}_l T_{ik} A_k \neq \mathbf{A} \times \underline{\underline{T}}\)</span></p></li>
+<li><p><span class="math inline">\(\underline{\underline{T}} \cdot \underline{\underline{V}} = T_{ij} V_{kl}\delta_{jk} \hat{\mathbf{e}}_i \hat{\mathbf{e}}_l = T_{ik} V_{kl} \hat{\mathbf{e}}_i \hat{\mathbf{e}}_l\)</span></p></li>
+<li><p><span class="math inline">\(\underline{\underline{T}} : \underline{\underline{V}} = T_{ik} V_{ki}\)</span></p></li>
+</ul>
 </div>
 <div id="curvilinear-coordinates-example-cylindrical-coordinates" class="slide section level1">
 <h1>Curvilinear coordinates example: Cylindrical Coordinates</h1>
@@ -52,7 +115,7 @@ z =&amp; r \cos\theta
 <h1>Transformations</h1>
 <p>We can write the position vector as</p>
 <p><span class="math display">\[d\mathbf{r} = \sum\limits_{i=1}^3 \frac{\partial \mathbf{r}}{\partial u_i} du_i \, .\]</span></p>
-<p>The factor <span class="math inline">\(\partial \mathbf{r}/\partial u_i\)</span> is a non-unitary vector, we can introduce a normalized based <span class="math inline">\(\hat{\mathbf{e}}_i\)</span></p>
+<p>The factor <span class="math inline">\(\partial \mathbf{r}/\partial u_i\)</span> is a non-unitary vector, we can introduce a normalized base <span class="math inline">\(\hat{\mathbf{e}}_i\)</span></p>
 <p><span class="math display">\[\frac{\partial \mathbf{r}}{\partial u_i} = h_i \hat{\mathbf{e}}_i \]</span></p>
 <p>where</p>
 <p><span class="math display">\[\left| \frac{\partial \mathbf{r}}{\partial u_i}\right| = h_i\]</span></p>
@@ -126,10 +189,10 @@ z =&amp; r \cos\theta
     \frac{\partial}{\partial u_i} \left(\frac{B_i h}{h_i}\right)\]</span></p>
 <p>In spherical coordinates it reads</p>
 <p><span class="math display">\[
-\nabla \cdot \mathbf{B} = \operatorname{div} \mathbf{B} 
-    = \frac{1}{r^2}\frac{\partial}{\partial r}(r^2 B_r) 
-     + \frac{1}{r\sin\theta}\frac{\partial}{\partial \theta}(\sin\theta B_\theta) 
-     + \frac{1}{r\sin\theta}\frac{\partial}{\partial \varphi}(B_\varphi) 
+\nabla \cdot \mathbf{B} = \operatorname{div} \mathbf{B}
+    = \frac{1}{r^2}\frac{\partial}{\partial r}(r^2 B_r)
+     + \frac{1}{r\sin\theta}\frac{\partial}{\partial \theta}(\sin\theta B_\theta)
+     + \frac{1}{r\sin\theta}\frac{\partial}{\partial \varphi}(B_\varphi)
 \]</span></p>
 </div>
 <div class="slide section level1">
@@ -166,6 +229,7 @@ z =&amp; r \cos\theta
 <h1>References</h1>
 <ul>
 <li><p>Alonso Sepúlveda Soto. Física matemática. Ciencia y Tecnología. Universidad de Antioquia, 2009.</p></li>
+<li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Tensor">&quot;Tensor.&quot;</a> Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved: 2 Aug. 2017.</p></li>
 <li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Curvilinear_coordinates">&quot;Curvilinear coordinates.&quot;</a> Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved: 3 Feb. 2017.</p></li>
 <li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Gradient">&quot;Gradient.&quot;</a> Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved: Web. 15 Feb. 2017.</p></li>
 <li><p>Wikipedia contributors. <a href="https://en.wikipedia.org/wiki/Divergence">&quot;Divergence.&quot;</a> Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved: Web. 15 Feb. 2017.</p></li>

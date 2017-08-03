@@ -2,8 +2,91 @@
 % Nicolás Guarín-Zapata
     email: nguarinz@eafit.edu.co
     github: nicoguaro
-% February 9, 2017
+% August 2, 2017
 
+
+
+------------------
+
+# Tensors
+
+<table>
+<tr>
+<td>
+Depiction of the Cauchy stress tensor, a second-order tensor.
+The tensor's components, in a three-dimensional Cartesian coordinate
+system, form the matrix
+
+$$\begin{align}
+\sigma & = \begin{bmatrix}\mathbf{T}^{(\mathbf{e}_1)} \mathbf{T}^{(\mathbf{e}_2)} \mathbf{T}^{(\mathbf{e}_3)} \\ \end{bmatrix} \\
+& = \begin{bmatrix} \sigma_{11} & \sigma_{12} & \sigma_{13} \\ \sigma_{21} & \sigma_{22} & \sigma_{23} \\ \sigma_{31} & \sigma_{32} & \sigma_{33} \end{bmatrix}\\
+\end{align}$$
+
+whose columns are the stresses (forces per unit area) acting on the $\mathbf{e}_1$ , $\mathbf{e}_2$, and $\mathbf{e}_3$ faces of the cube.
+</td>
+<td>
+<img src="./img/Components_stress_tensor.svg"
+    width=600
+    class="centObj">
+</td>
+</tr>
+</table>
+
+------------------
+
+# Kronecker Delta
+
+The Kronecker delta is defined by
+
+$$\delta_{ij} = \begin{cases}
+1\quad i=j\\
+0\quad i\neq j
+\end{cases}$$
+
+and it can be thought as the components of the identity tensor.
+
+------------------
+
+# Levi-Civita symbol
+
+<table>
+<tr>
+<td>
+It is defined by the cross product between element of an orthonormal basis
+
+$$\hat{\mathbf{e}}_i \times \hat{\mathbf{e}}_j = \sum_{k=1}^{3}\epsilon_{ijk} \hat{\mathbf{e}}_k$$
+
+with
+
+$$\begin{align}
+\epsilon_{ijk} &= \frac{1}{2} (i - j)(j - k)(k - i)\\
+&= \begin{cases}
+1\quad \text{even permutation}\\
+-1\quad \text{odd permutation}\\
+0\quad \text{repeated indices}\\
+\end{cases}
+\end{align}$$
+</td>
+
+<td>
+<img src="./img/Epsilontensor.svg"
+    width=600
+    class="centObj">
+</td>
+</tr>
+</table>
+
+------------------
+
+# Some operations between second-order Tensors
+
+- $\underline{\underline{T}} \cdot \mathbf{A} = T_{ik} A_k \hat{\mathbf{e}}_i$
+
+- $\underline{\underline{T}} \times \mathbf{A} = \hat{\mathbf{e}}_i \epsilon_{jkl} \hat{\mathbf{e}}_l T_{ik} A_k \neq \mathbf{A} \times \underline{\underline{T}}$
+
+- $\underline{\underline{T}} \cdot \underline{\underline{V}} = T_{ij} V_{kl}\delta_{jk} \hat{\mathbf{e}}_i \hat{\mathbf{e}}_l = T_{ik} V_{kl} \hat{\mathbf{e}}_i \hat{\mathbf{e}}_l$
+
+- $\underline{\underline{T}} : \underline{\underline{V}} = T_{ik} V_{ki}$
 
 ------------------
 
@@ -16,7 +99,6 @@
     frameborder="0"
     allowfullscreen
     class="centObj"></iframe>
-
 
 ------------------
 
@@ -49,7 +131,7 @@ We can write the position vector as
 $$d\mathbf{r} = \sum\limits_{i=1}^3 \frac{\partial \mathbf{r}}{\partial u_i} du_i \, .$$
 
 The factor $\partial \mathbf{r}/\partial u_i$ is a non-unitary vector, we can
-introduce a normalized based $\hat{\mathbf{e}}_i$
+introduce a normalized base $\hat{\mathbf{e}}_i$
 
 $$\frac{\partial \mathbf{r}}{\partial u_i} = h_i \hat{\mathbf{e}}_i $$
 
@@ -164,10 +246,10 @@ $$\nabla \cdot \mathbf{B} = \operatorname{div} \mathbf{B} = \frac{1}{h}\sum_{i=1
 In spherical coordinates it reads
 
 $$
-\nabla \cdot \mathbf{B} = \operatorname{div} \mathbf{B} 
-    = \frac{1}{r^2}\frac{\partial}{\partial r}(r^2 B_r) 
-     + \frac{1}{r\sin\theta}\frac{\partial}{\partial \theta}(\sin\theta B_\theta) 
-     + \frac{1}{r\sin\theta}\frac{\partial}{\partial \varphi}(B_\varphi) 
+\nabla \cdot \mathbf{B} = \operatorname{div} \mathbf{B}
+    = \frac{1}{r^2}\frac{\partial}{\partial r}(r^2 B_r)
+     + \frac{1}{r\sin\theta}\frac{\partial}{\partial \theta}(\sin\theta B_\theta)
+     + \frac{1}{r\sin\theta}\frac{\partial}{\partial \varphi}(B_\varphi)
 $$
 
 ------------------
@@ -230,19 +312,22 @@ for other coordinate systems.
 - Alonso Sepúlveda Soto. Física matemática. Ciencia y Tecnología. Universidad
   de Antioquia, 2009.
 
+- Wikipedia contributors. ["Tensor."](https://en.wikipedia.org/wiki/Tensor)
+  Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia,
+  Retrieved: 2 Aug. 2017.
+
 - Wikipedia contributors. ["Curvilinear coordinates."](https://en.wikipedia.org/wiki/Curvilinear_coordinates)
   Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved: 3 Feb. 2017.
 
 - Wikipedia contributors. ["Gradient."](https://en.wikipedia.org/wiki/Gradient)
 Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved:
-Web. 15 Feb. 2017. 
+Web. 15 Feb. 2017.
 
 - Wikipedia contributors. ["Divergence."](https://en.wikipedia.org/wiki/Divergence) Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved:
-Web. 15 Feb. 2017. 
+Web. 15 Feb. 2017.
 
 - Wikipedia contributors. ["Curl (mathematics)."](https://en.wikipedia.org/wiki/Curl_(mathematics))
 Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved:
-Web. 15 Feb. 2017. 
+Web. 15 Feb. 2017.
 
-- Wikipedia contributors. ["Laplace operator."](https://en.wikipedia.org/wiki/Laplace_operator) Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved: Web. 17 Feb. 2017. 
-
+- Wikipedia contributors. ["Laplace operator."](https://en.wikipedia.org/wiki/Laplace_operator) Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, Retrieved: Web. 17 Feb. 2017.
