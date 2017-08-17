@@ -243,6 +243,8 @@ $\nabla\cdot\mathbf{B}$ or \operatorname{div} \mathbf{B} , is given by
 $$\nabla \cdot \mathbf{B} = \operatorname{div} \mathbf{B} = \frac{1}{h}\sum_{i=1}^3
     \frac{\partial}{\partial u_i} \left(\frac{B_i h}{h_i}\right)$$
 
+with $h = h_1 h_2 h_3$.
+
 In spherical coordinates it reads
 
 $$
@@ -293,7 +295,9 @@ $\nabla^2 f$, or $\Delta f$, it is defined as $\nabla\cdot\nabla f$. It is defin
 as
 
 $$\nabla^2 f = \frac{1}{h}\sum_{i=1}^3 \frac{\partial}{\partial u_i}
-\left(\frac{h}{h_i^2}\frac{\partial f}{\partial u_i}\right)\, .$$
+\left(\frac{h}{h_i^2}\frac{\partial f}{\partial u_i}\right)\, ,$$
+
+with $h = h_1 h_2 h_3$.
 
 For a vector function, the Laplacian is defined like
 
