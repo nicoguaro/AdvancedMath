@@ -33,14 +33,14 @@ Let $V$ and $W$ be vector spaces over the same [field](https://en.wikipedia.org/
 
 <iframe
     width="1280" height="720"
-    src="http://math.mercyhurst.edu/~lwilliams/Applets/LinearTransformations.html"
+    src="http://math.mercyhurst.edu/~lwilliams/Applets/algebra/linearTransformations.php"
     frameborder="0"
     allowfullscreen
     class="centObj"></iframe>
 
 ------------------
 
-## Examples of linear transformation matrices
+# Examples of linear transformation matrices
 
 In two-dimensional space $\mathbb{R}^2$ linear maps are described by 2 × 2 real matrices. These are some examples:
 

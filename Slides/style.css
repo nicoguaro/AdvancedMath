@@ -11,14 +11,14 @@ body
   padding: 0 0 0 0;
   width: 100%;
   height: 100%;
-  color: black;
-  background-color: white;
-  font-family: "Gill Sans MT", "Gill Sans", GillSans, sans-serif;
-  font-size: 14pt;
+  color: #333333;
+  background-color: #e6e6e6;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16pt;
 }
 
 .slide {
-  font-size: 30pt;
+  font-size: 32pt;
 }
 
 
@@ -41,7 +41,7 @@ div.toolbar {
 }
 
 div.toolbar span.copyright {
-  color: black;
+  color: #333333;
   margin-left: 0.5em;
 }
 
@@ -121,6 +121,7 @@ div.handout {
 
 div.slide.titlepage {
   text-align: center;
+  color: #333333;
 }
 
 div.slide.titlepage h1 {
@@ -137,8 +138,9 @@ div.slide h1 {
   margin-left: 0;
   margin-right: 60pt;
   margin-bottom: 0.5em;
-  display: block; 
-  font-size: 160%;
+  display: block;
+  color: #333333;
+  font-size: 180%;
   line-height: 1.2em;
   background: transparent;
 }
@@ -155,7 +157,7 @@ div.toc {
   border: solid thin black;
   padding: 1em;
   background: rgb(240,240,240);
-  color: black;
+  color: #333333;
   z-index: 300;
   overflow: auto;
   display: block;
