@@ -31,8 +31,8 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
 <div id="ordinary-differential-equations" class="slide section level1">
 <h1>Ordinary differential equations</h1>
 <p>An ordinary differential equation (ODE) is an equation of the form</p>
-<p><span class="math display">\[F(x, y, y&#39;, y&#39;&#39;, \cdots, y^{(n)}) = 0\, ,\]</span></p>
-<p>where <span class="math inline">\(F\)</span> is a function of the independent variable <span class="math inline">\(x\)</span>, dependent variable <span class="math inline">\(y(x)\)</span>, and its derivatives.</p>
+<p><span class="math display">\[F(z, y, y&#39;, y&#39;&#39;, \cdots, y^{(n)}) = 0\, ,\]</span></p>
+<p>where <span class="math inline">\(F\)</span> is a function of the independent variable <span class="math inline">\(z\)</span>, dependent variable <span class="math inline">\(y(z)\)</span>, and its derivatives.</p>
 </div>
 <div id="classification-number-of-variables" class="slide section level1">
 <h1>Classification: Number of variables</h1>
@@ -58,13 +58,13 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
 <div id="classification-homogeneity" class="slide section level1">
 <h1>Classification: Homogeneity</h1>
 <p>The equation is homogeneous if the right-hand-side of</p>
-<p><span class="math display">\[F(x, y, y&#39;, y&#39;&#39;, \cdots, y^{(n)}) = G(x)\, ,\]</span></p>
+<p><span class="math display">\[F(z, y, y&#39;, y&#39;&#39;, \cdots, y^{(n)}) = G(z)\, ,\]</span></p>
 <p>is zero.</p>
 </div>
 <div id="classification-linearity" class="slide section level1">
 <h1>Classification: Linearity</h1>
 <p>The equation</p>
-<p><span class="math display">\[F(x, y, y&#39;, y&#39;&#39;, \cdots, y^{(n)}) = 0\, ,\]</span></p>
+<p><span class="math display">\[F(z, y, y&#39;, y&#39;&#39;, \cdots, y^{(n)}) = 0\, ,\]</span></p>
 <p>is linear if <span class="math inline">\(F\)</span> is a linear function of the variables <span class="math inline">\(y, y&#39;, \cdots, y^{(n)}\)</span>.</p>
 \begin{align}
 &amp;\frac{\partial^2 u}{\partial t^2} = e^{-t} \frac{\partial^2 u}{\partial x^2}
@@ -88,7 +88,7 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
 In this case, gravity is the only force acting upon an object. The equation reads <span class="math display">\[y&#39;&#39; =g = \text{const}\]</span>
 </td>
 <td>
-<video width="640" height="480" autoplay>
+<video width="640" height="480" autoplay loop>
 <source src="./img/free_fall.mp4" type="video/mp4"> Your browser does not support the video tag.
 </video>
 </td>
@@ -103,7 +103,7 @@ In this case, gravity is the only force acting upon an object. The equation read
 This case is similar to the previous one, but there is air resistance (drag). The drag force is normally as a constant multiplied by the square of the speed <span class="math display">\[m\frac{d^2 y}{dt^2} = mg - b\left(\frac{dy}{dt}\right)^2\]</span>
 </td>
 <td>
-<video width="640" height="480" autoplay>
+<video width="640" height="480" autoplay loop>
 <source src="./img/drag_fall.mp4" type="video/mp4"> Your browser does not support the video tag.
 </video>
 </td>

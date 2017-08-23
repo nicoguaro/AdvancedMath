@@ -12,10 +12,10 @@
 
 An ordinary differential equation (ODE) is an equation of the form
 
-$$F(x, y, y', y'', \cdots, y^{(n)}) = 0\, ,$$
+$$F(z, y, y', y'', \cdots, y^{(n)}) = 0\, ,$$
 
-where $F$ is a function of the independent variable $x$,
-dependent variable $y(x)$, and its derivatives.
+where $F$ is a function of the independent variable $z$,
+dependent variable $y(z)$, and its derivatives.
 
 ------------------
 
@@ -50,7 +50,7 @@ What is the order of the higher derivative?
 
 The equation is homogeneous if the right-hand-side of
 
-$$F(x, y, y', y'', \cdots, y^{(n)}) = G(x)\, ,$$
+$$F(z, y, y', y'', \cdots, y^{(n)}) = G(z)\, ,$$
 
 is zero.
 
@@ -60,7 +60,7 @@ is zero.
 
 The equation
 
-$$F(x, y, y', y'', \cdots, y^{(n)}) = 0\, ,$$
+$$F(z, y, y', y'', \cdots, y^{(n)}) = 0\, ,$$
 
 is linear if $F$ is a linear function of the variables $y, y', \cdots, y^{(n)}$.
 
@@ -94,7 +94,7 @@ reads
 $$y'' =g = \text{const}$$
 </td>
 <td>
-<video width="640" height="480" autoplay>
+<video width="640" height="480" autoplay loop>
    <source src="./img/free_fall.mp4" type="video/mp4">
    Your browser does not support the video tag.
 </video>
@@ -113,7 +113,7 @@ The drag force is normally as a constant multiplied by the square of the speed
 $$m\frac{d^2 y}{dt^2} = mg - b\left(\frac{dy}{dt}\right)^2$$
 </td>
 <td>
-<video width="640" height="480" autoplay>
+<video width="640" height="480" autoplay loop>
    <source src="./img/drag_fall.mp4" type="video/mp4">
    Your browser does not support the video tag.
 </video>
