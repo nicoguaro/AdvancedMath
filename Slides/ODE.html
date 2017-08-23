@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Nicolás Guarín-Zapata" />
+  <meta name="author" content="email: nguarinz@eafit.edu.co" />
+  <meta name="author" content="github: nicoguaro" />
+  <meta name="date" content="2017-08-24" />
+  <title>Ordinary differential equations</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="style.css" />
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Ordinary differential equations</h1>
+  <p class="author">
+Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
+  </p>
+  <p class="date">August 24, 2017</p>
+</div>
+<div id="ordinary-differential-equations" class="slide section level1">
+<h1>Ordinary differential equations</h1>
+<p>An ordinary differential equation (ODE) is an equation of the form</p>
+<p><span class="math display">\[F(x, y, y&#39;, y&#39;&#39;, \cdots, y^{(n)}) = 0\, ,\]</span></p>
+<p>where <span class="math inline">\(F\)</span> is a function of the independent variable <span class="math inline">\(x\)</span>, dependent variable <span class="math inline">\(y(x)\)</span>, and its derivatives.</p>
+</div>
+<div id="classification-number-of-variables" class="slide section level1">
+<h1>Classification: Number of variables</h1>
+<p>How many independent variables does the equation have?</p>
+\begin{align}
+&amp;L\frac{d^2 Q}{dt^2} + R\frac{dQ}{dt} + \frac{1}{C}Q = E  &amp;\text{(ODE)}\\
+&amp;\frac{\partial u}{\partial t} =\alpha \frac{\partial^2 u}{\partial x^2}  &amp;\text{(PDE)}\\
+&amp;\frac{\partial u}{\partial t} =\frac{\partial^2 u}{\partial r^2} +
+    \frac{1}{r} \frac{\partial u}{\partial r} +
+    \frac{1}{r^2}\frac{\partial^2 u}{\partial \theta^2}  &amp;\text{(PDE)}
+\end{align}
+</div>
+<div id="classification-order" class="slide section level1">
+<h1>Classification: Order</h1>
+<p>What is the order of the higher derivative?</p>
+\begin{align}
+&amp;\frac{\partial u}{\partial t} =\alpha \frac{\partial^2 u}{\partial x^2}  &amp;\text{(Second order)}\\
+&amp;\frac{d^2 u}{d t^2} = f(t)  &amp;\text{(Second order)}\\
+&amp;\frac{d^{(3)} y}{dx^3} + 2 e^x \frac{d^2 y}{d x^2} +
+    y\frac{d y}{dx} = x^4  &amp;\text{(Third order)}
+\end{align}
+</div>
+<div id="classification-homogeneity" class="slide section level1">
+<h1>Classification: Homogeneity</h1>
+<p>The equation is homogeneous if the right-hand-side of</p>
+<p><span class="math display">\[F(x, y, y&#39;, y&#39;&#39;, \cdots, y^{(n)}) = G(x)\, ,\]</span></p>
+<p>is zero.</p>
+</div>
+<div id="classification-linearity" class="slide section level1">
+<h1>Classification: Linearity</h1>
+<p>The equation</p>
+<p><span class="math display">\[F(x, y, y&#39;, y&#39;&#39;, \cdots, y^{(n)}) = 0\, ,\]</span></p>
+<p>is linear if <span class="math inline">\(F\)</span> is a linear function of the variables <span class="math inline">\(y, y&#39;, \cdots, y^{(n)}\)</span>.</p>
+\begin{align}
+&amp;\frac{\partial^2 u}{\partial t^2} = e^{-t} \frac{\partial^2 u}{\partial x^2}
+  + \sin t  &amp;\text{(Linear)}\\
+&amp;\frac{d^2 \theta}{d t^2} = \frac{g}{l}\sin\theta  &amp;\text{(Non-linear)}
+\end{align}
+</div>
+<div id="classification-type-of-coefficients" class="slide section level1">
+<h1>Classification: Type of coefficients</h1>
+<p>In the case of linear equations, we analyze the coefficients of the linear combination. Are these coefficients constant or functions of <span class="math inline">\(x\)</span>?</p>
+\begin{align}
+&amp;a\frac{d^2 u}{d t^2} + b \frac{d u}{d t} + c u  = 0 &amp;\text{(Constant coefficients)}\\
+&amp;\frac{d}{dx}\left(x\frac{d w}{dx}\right) = -\omega^2 w  &amp;\text{(Variable coefficients)}
+\end{align}
+</div>
+<div id="examples-free-fall" class="slide section level1">
+<h1>Examples: Free fall</h1>
+<table>
+<tr>
+<td>
+In this case, gravity is the only force acting upon an object. The equation reads <span class="math display">\[y&#39;&#39; =g = \text{const}\]</span>
+</td>
+<td>
+<video width="640" height="480" autoplay>
+<source src="./img/free_fall.mp4" type="video/mp4"> Your browser does not support the video tag.
+</video>
+</td>
+</tr>
+</table>
+</div>
+<div id="examples-parachute-falling" class="slide section level1">
+<h1>Examples: Parachute falling</h1>
+<table>
+<tr>
+<td>
+This case is similar to the previous one, but there is air resistance (drag). The drag force is normally as a constant multiplied by the square of the speed <span class="math display">\[m\frac{d^2 y}{dt^2} = mg - b\left(\frac{dy}{dt}\right)^2\]</span>
+</td>
+<td>
+<video width="640" height="480" autoplay>
+<source src="./img/drag_fall.mp4" type="video/mp4"> Your browser does not support the video tag.
+</video>
+</td>
+</tr>
+</table>
+</div>
+<div id="examples-pendulum" class="slide section level1">
+<h1>Examples: Pendulum</h1>
+<table>
+<tr>
+<td>
+<img src="./img/PenduloTmg.gif"
+    width=300
+    class="centObj">
+</td>
+<td>
+<p>A pendulum is a weight suspended from a pivot that can swing freely. The equation for a simple pendulum is</p>
+<span class="math display">\[L\theta&#39;&#39; + g\sin\theta = 0\]</span>
+</td>
+</tr>
+</table>
+</div>
+<div id="references" class="slide section level1">
+<h1>References</h1>
+<ul>
+<li><p>H. Hochstadt. Differential equations: a modern approach. Courier Dover Publications, 1975.</p></li>
+<li><p>Erwin Kreyszig. Advanced engineering mathematics. John Wiley &amp; Sons, 2010.</p></li>
+<li><p>Ruryk, 2011. Oscilatting pendulum. Retrieved from: https://commons.wikimedia.org/wiki/File:PenduloTmg.gif</p></li>
+</ul>
+</div>
+</body>
+</html>

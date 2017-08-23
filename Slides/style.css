@@ -33,7 +33,7 @@ div.toolbar {
   top: auto; bottom: 0; left: 0; right: 0;
   height: 2.0em; text-align: right;
   padding-left: 1em;
-  padding-right: 1em; 
+  padding-right: 1em;
   font-size: 60%;
   color: red;
   background-color: rgb(240,240,240);
@@ -96,8 +96,8 @@ div.slidy_toc .toc_heading {
 div.slide {
   z-index: 20;
   margin: 0 0 0 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   border-width: 0;
@@ -130,10 +130,10 @@ div.slide.titlepage h1 {
 }
 
 div.slide h1 {
-  padding-left: 0;
+  padding-left: 0pt;
   padding-right: 20pt;
   padding-top: 4pt;
-  padding-bottom: 4pt;
+  padding-bottom: 50pt;
   margin-top: 0;
   margin-left: 0;
   margin-right: 60pt;
@@ -262,29 +262,29 @@ ul ul { list-style-type: disc; }
 ul ul ul { list-style-type: circle; }
 ul ul ul ul { list-style-type: disc; }
 
-ul li { 
+ul li {
   list-style: square;
   margin: 0.1em 0em 0.6em 0;
   padding: 0 0 0 0;
   line-height: 140%;
 }
 
-ol li { 
+ol li {
   margin: 0.1em 0em 0.6em 1.5em;
   padding: 0 0 0 0px;
   line-height: 140%;
   list-style-type: decimal;
 }
 
-li ul li { 
-  font-size: 85%; 
+li ul li {
+  font-size: 85%;
   font-style: italic;
   list-style-type: disc;
   background: transparent;
   padding: 0 0 0 0;
 }
-li li ul li { 
-  font-size: 85%; 
+li li ul li {
+  font-size: 85%;
   font-style: normal;
   list-style-type: circle;
   background: transparent;
