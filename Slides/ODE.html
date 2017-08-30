@@ -9,7 +9,7 @@
   <meta name="author" content="Nicolás Guarín-Zapata" />
   <meta name="author" content="email: nguarinz@eafit.edu.co" />
   <meta name="author" content="github: nicoguaro" />
-  <meta name="date" content="2017-08-24" />
+  <meta name="date" content="2017-08-31" />
   <title>Ordinary differential equations</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
@@ -26,7 +26,7 @@
   <p class="author">
 Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
   </p>
-  <p class="date">August 24, 2017</p>
+  <p class="date">August 31, 2017</p>
 </div>
 <div id="ordinary-differential-equations" class="slide section level1">
 <h1>Ordinary differential equations</h1>
@@ -117,11 +117,190 @@ This case is similar to the previous one, but there is air resistance (drag). Th
 <td>
 <img src="./img/PenduloTmg.gif"
     width=300
-    class="centObj">
+    class="centObj"/>
 </td>
 <td>
 <p>A pendulum is a weight suspended from a pivot that can swing freely. The equation for a simple pendulum is</p>
 <span class="math display">\[L\theta&#39;&#39; + g\sin\theta = 0\]</span>
+</td>
+</tr>
+</table>
+</div>
+<div id="power-series-solutions" class="slide section level1">
+<h1>Power series solutions</h1>
+<p>Consider the second-order linear differential equation</p>
+<p><span class="math display">\[a_0(z)f&#39;&#39;(z)+a_1(z)f&#39;(z)+a_2(z)f(z)=0\, ,\]</span></p>
+<p>where <span class="math inline">\(a_0\)</span> is nonzero for all <span class="math inline">\(z\)</span>, and <span class="math inline">\(a_1/a_0\)</span> and <span class="math inline">\(a_2/a_0\)</span> are analytic functions.</p>
+<p>The power series method calls for the construction of a power series solution <span class="math display">\[f=\sum_{k=0}^\infty A_kz^k\, ,\]</span></p>
+<p>to find the form of the coefficients <span class="math inline">\(A_k\)</span>.</p>
+</div>
+<div id="power-series-solutions-example-1" class="slide section level1">
+<h1>Power series solutions: Example 1</h1>
+<p>Consider the equation</p>
+<p><span class="math display">\[y&#39; = y\, .\]</span></p>
+<p>Assuming <span class="math inline">\(y=\sum_{k=0}^\infty A_k z^k\)</span>, leads to</p>
+<p><span class="math display">\[\sum_{k=1}^\infty[A_{k-1} - k A_k] z^k = 0\, ,\]</span></p>
+<p>or</p>
+<p><span class="math display">\[A_k = \frac{A_{k-1}}{k}\, .\]</span></p>
+</div>
+<div id="power-series-solutions-example-2" class="slide section level1">
+<h1>Power series solutions: Example 2</h1>
+<p>Consider the (not so simple) equation</p>
+<p><span class="math display">\[y&#39;&#39; - z y = 0\, .\]</span></p>
+<p>Assuming <span class="math inline">\(y=\sum_{k=0}^\infty A_k z^k\)</span>, leads to</p>
+<p><span class="math display">\[2A_2 + \sum_{k=1}^\infty[(k + 2)(k + 1)A_{k+2} - A_{k-1}] z^k = 0\, .\]</span></p>
+</div>
+<div id="power-series-solutions-example-2-1" class="slide section level1">
+<h1>Power series solutions: Example 2</h1>
+<p>We obtain the general solution</p>
+\begin{align}
+y(z) =&amp;
+C_0\left[1 +
+\sum_{k=1}^{\infty} \frac{z^{3k}}{(2\cdot 3) (5\cdot 6) \cdots ((3k-1) \cdot (3k))}\right]\\
+   &amp;+ C_1\left[z +
+\sum_{k=1}^{\infty} \frac{z^{3k+1}}{(3\cdot 4) (6\cdot 7) \cdots ((3k) \cdot (3k+1))}\right]
+\end{align}
+</div>
+<div id="power-series-solutions-example-2-2" class="slide section level1">
+<h1>Power series solutions: Example 2</h1>
+<table>
+<tr>
+<td>
+<p>These series represent a group of <em>special functions</em> named Airy functions</p>
+<p><span class="math display">\[y(z) = \mathrm{Ai}(z) + \mathrm{Bi}(z)\, ,\]</span></p>
+<p>due to the British astronomer George Biddel Airy.</p>
+They appear in the solution of Scrödinger equation for a particle confined within a triangular potential. They are also important in microscopy and astronomy.
+</td>
+<td>
+<img src="./img/airy_functions.svg"
+    width=700
+    class="centObj"/>
+</td>
+</tr>
+</table>
+</div>
+<div id="power-series-solutions-a-nonlinear-example" class="slide section level1">
+<h1>Power series solutions: A nonlinear example</h1>
+<p>The equation <span class="math inline">\(x&#39; = 1 + x^2\)</span>, with initial condition <span class="math inline">\(x(0) = 0\)</span>, has the solution <span class="math inline">\(x = \tan(t)\)</span>. We could use the power series method, assuming <span class="math inline">\(x = \sum_{k=0}^\infty A_k t^k\)</span>, to obtain</p>
+<p><span class="math display">\[\sum_{k=0}^{\infty} (k + 1) A_{k+1} t^k =
+1 + \left(\sum_{k=0}^{\infty} A_k t^k\right)^2 =
+1 + A_0^2 + \sum_{k=1}^\infty\left[\sum_{j=0}^{k} A_j A_{k-j}\right]t^k\]</span></p>
+<p>and the coefficients are</p>
+\begin{align}
+A_0 &amp;= 0\\
+A_1 &amp;= 1 + A_0^2\\
+A_{k + 1} &amp;= \frac{1}{k + 1}\sum_{j=0}^{k} A_{k} A_{j - k}\quad \forall k\in \mathbb{N}
+\end{align}
+</div>
+<div id="frobenius-method" class="slide section level1">
+<h1>Frobenius method</h1>
+<p>This method gives as a way to find infinite series solutions for the differential equation</p>
+<p><span class="math display">\[z^2 u&#39;&#39; + p(z) z u&#39;&#39; + q(z) u = 0\, ,\]</span></p>
+<p>in the vinicinity of the regular singular point <span class="math inline">\(z=0\)</span>. We could divide by <span class="math inline">\(z^2\)</span> to obtain</p>
+<p><span class="math display">\[u&#39;&#39; + \frac{p(z)}{z} u&#39; + \frac{q(z)}{z^2} u = 0\, .\]</span></p>
+</div>
+<div id="frobenius-method-1" class="slide section level1">
+<h1>Frobenius method</h1>
+<p>We are looking for a solution of the form</p>
+<p><span class="math display">\[u(z) = \sum_{k=0}^\infty A_k z^{k + r}\quad A_0\neq 0, r\in \mathbb{R}\, ,\]</span></p>
+<p>that leads us to the equation</p>
+\begin{align}
+  0 =&amp;[r (r - 1) + p(z) + q(z)]A_0 z^r \\
+  &amp;+ \sum_{k=1}^{\infty} [(k + r - 1)(k + r) + p(z)(k + r) + q(z)]A_k z^{k + r}
+\end{align}
+</div>
+<div id="frobenius-method-2" class="slide section level1">
+<h1>Frobenius method</h1>
+<p>The expression</p>
+<p><span class="math display">\[I(r) \equiv r(r - 1) + p(0)r + q(0)\]</span></p>
+<p>is called the inditial equation, and its roots give us the values for <span class="math inline">\(r\)</span>.</p>
+<p>Depending on the values for the roots, we have different ways to obtain two linearly independent solutions.</p>
+</div>
+<div id="frobenius-method-case-1" class="slide section level1">
+<h1>Frobenius method: Case 1</h1>
+<p>The roots do not differ by an integer</p>
+\begin{align}
+y_1 &amp;= \sum_{k=0}^\infty A_k z^{k + r_1}\quad A_0\neq 0\\
+y_2 &amp;= \sum_{k=0}^\infty A_k z^{k + r_2}\quad A_0\neq 0
+\end{align}
+</div>
+<div id="frobenius-method-case-2" class="slide section level1">
+<h1>Frobenius method: Case 2</h1>
+<p>The roots do differ by an integer</p>
+\begin{align}
+y_1 &amp;= \sum_{k=0}^\infty A_k z^{k + r_1}\quad A_0\neq 0\\
+y_2 &amp;= C y_1 \ln(z) + \sum_{k=0}^\infty A_k z^{k + r_2}\quad A_0\neq 0
+\end{align}
+<p>where <span class="math inline">\(C\)</span> is a constant that could be zero.</p>
+</div>
+<div id="frobenius-method-case-3" class="slide section level1">
+<h1>Frobenius method: Case 3</h1>
+<p>The roots are the same</p>
+\begin{align}
+y_1 &amp;= \sum_{k=0}^\infty A_k z^{k + r_1}\quad A_0\neq 0\\
+y_2 &amp;= y_1 \ln(z) + \sum_{k=0}^\infty A_k z^{k + r_2}\quad A_0\neq 0
+\end{align}
+</div>
+<div id="bessel-equation" class="slide section level1">
+<h1>Bessel equation</h1>
+<p>The Bessel equation is of the form</p>
+<p><span class="math display">\[z^2 y&#39;&#39; + z y&#39; + (z^2 - \nu^2) y = 0\, .\]</span></p>
+<p>And it appears frequently when solving problems in cylindrical or spherical coordinates. Particularly, when solving the temperature distribution of a circular plate or the vibration or a membrane.</p>
+</div>
+<div id="bessel-equation-sketch-of-solution" class="slide section level1">
+<h1>Bessel equation: Sketch of solution</h1>
+<p>After pluging our infinite series we obtain</p>
+<p><span class="math display">\[A_0 (r^2 - \nu^2) z^r + z^r\sum_{k=1}^\infty A_k [(n + r)^2 - \nu^2]z^n +
+z^r \sum_{k=0}^\infty A_k z^{n + 2} = 0 \]</span></p>
+<p>And the indicial equation</p>
+<p><span class="math display">\[r^2 - \nu^2 = 0\]</span></p>
+<p>has as solutions <span class="math inline">\(r_1 = \nu\)</span>, <span class="math inline">\(r_2 = -\nu\)</span>.</p>
+</div>
+<div id="bessel-equation-sketch-of-solution-1" class="slide section level1">
+<h1>Bessel equation: Sketch of solution</h1>
+<p>If we solve the recurrence relations for <span class="math inline">\(r_1 =\nu\)</span>, we end up with</p>
+<p><span class="math display">\[A_{2k} = -\frac{A_{2k - 2}}{2^2 n (n + \nu)}\]</span></p>
+<p>and the solution renders</p>
+<p><span class="math display">\[y = A_0 \sum_{n=0}^\infty \frac{(-1)^n}{2^n n! (1 +\nu)(2 + \nu)\cdots(n + \nu)}
+\left(\frac{z}{2}\right)^{2n + \nu}\, .\]</span></p>
+</div>
+<div id="bessel-equation-sketch-of-solution-2" class="slide section level1">
+<h1>Bessel equation: Sketch of solution</h1>
+<p>We could rewrite this <em>prettier</em> using the Gamma function</p>
+<p><span class="math display">\[y = A_0 \sum_{n=0}^\infty \frac{(-1)^n}{n! \Gamma(1 + \nu + n)}
+\left(\frac{z}{2}\right)^{2n + \nu}\, ,\]</span></p>
+<p>or simply</p>
+<p><span class="math display">\[y = A_0 \mathrm{J}_\nu(z)\, .\]</span></p>
+</div>
+<div id="bessel-functions-of-the-first-kind" class="slide section level1">
+<h1>Bessel functions of the first kind</h1>
+<table>
+<tr>
+<td>
+<p>They appear as the solution of Bessel equation for integer or positive <span class="math inline">\(\nu\)</span>.</p>
+For non-integer <span class="math inline">\(\nu\)</span>, the functions <span class="math inline">\(\mathrm{J}_\nu(z)\)</span> and <span class="math inline">\(\mathrm{J}_{-\nu}(z)\)</span> are linearly independent.
+</td>
+<td>
+<img src="./img/bessel_functions.svg"
+    width=700
+    class="centObj"/>
+</td>
+</tr>
+</table>
+</div>
+<div id="gamma-function" class="slide section level1">
+<h1>Gamma function</h1>
+<table>
+<tr>
+<td>
+<p>The gamma function is an extension of the factorial</p>
+<p><span class="math display">\[\Gamma(n) = (n - 10)!\, .\]</span></p>
+The Gamma function is defined for all complex numbers except for non-positive integers. For complex numbers with a positive real part, it is defined via a convergent improper integral: <span class="math display">\[\Gamma(z) = \int_{0}^{\infty} t^{z-1} e^{-t} \mathrm{d}t\, .\]</span>
+</td>
+<td>
+<img src="./img/gamma_function.svg"
+    width=700
+    class="centObj"/>
 </td>
 </tr>
 </table>
@@ -131,6 +310,7 @@ This case is similar to the previous one, but there is air resistance (drag). Th
 <ul>
 <li><p>H. Hochstadt. Differential equations: a modern approach. Courier Dover Publications, 1975.</p></li>
 <li><p>Erwin Kreyszig. Advanced engineering mathematics. John Wiley &amp; Sons, 2010.</p></li>
+<li><p>Dennis G. Zill. Ecuaciones diferenciales: con aplicaciones demodelado. Iternational Thomson Editores, 1997.</p></li>
 <li><p>Ruryk, 2011. Oscilatting pendulum. Retrieved from: https://commons.wikimedia.org/wiki/File:PenduloTmg.gif</p></li>
 </ul>
 </div>
