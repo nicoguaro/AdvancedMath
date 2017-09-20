@@ -2,7 +2,7 @@
 % Nicolás Guarín-Zapata
     email: nguarinz@eafit.edu.co
     github: nicoguaro
-% April 16, 2017
+% September 20, 2017
 
 
 ------------------
@@ -10,7 +10,7 @@
 # Inner products
 
 Inner products let us extend geometrical notions such as length of a vector
-or angle between vectors for vector spaces that are more abstract than 
+or angle between vectors for vector spaces that are more abstract than
 $\mathbb{R}^2$ or $\mathbb{R}^3$. It also let us define the orthogonality
 between vectors. Inner product spaces generalize the notion of Euclidean
 spaces to any dimension.
@@ -48,7 +48,7 @@ $$\left\lbrace \frac{1}{\sqrt{\pi}} \sin(nx),
 
 $$\left\lbrace (-1)^n e^{x^2}\frac{d^n}{dx^n} e^{-x^2},\middle|
   \forall n \in \mathbb{N}, \forall x\in [-\infty, \infty]\right\rbrace$$
-  
+
 with orthogonality as
 
 $$\int\limits_{-\infty}^{\infty} H_m(x) H_n(x) e^{-x^2} dx = \sqrt{\pi}s^n n! \delta_{mn}$$
@@ -64,7 +64,7 @@ $$\int\limits_{-\infty}^{\infty} H_m(x) H_n(x) e^{-x^2} dx = \sqrt{\pi}s^n n! \d
 They are defined by the recursion relation
 
 $$T_0(x) = 1,\, T_1(x) = x,\, T_{n+1} = 2x T_n(x) - T_{n-1}(x),\quad \forall x\in [-1,1]$$
-  
+
 with orthogonality as
 
 $$\int\limits_{-1}^{1} T_m(x) T_n(x) \frac{dx}{\sqrt{1 - x^2}} =
@@ -93,7 +93,7 @@ trigonometric functions greatly simplifies the study of heat transfer.
 
 # Fourier analysis: scientific applications
 
-Fourier analysis has many scientific applications: 
+Fourier analysis has many scientific applications:
 
 - Signal Processing. It may be the best application of Fourier analysis.
 
@@ -155,7 +155,7 @@ b_n = \frac{2}{P}\int_{x_0}^{x_0+P} \sin\left(\frac{2\pi nx}{P}\right) f(x)\, dx
     frameborder="0"
     allowfullscreen
     class="centObj"></iframe>
- 
+
 ------------------
 
 # Orthogonal basis: continuum case
@@ -165,7 +165,7 @@ $(c, d)$ are orthogonal with weight $w(x)$ ($w(x)$ real) if:
 
 $$\int\limits_{a}^{b} w(x) \phi^* (k, x) \phi(k', x)\, dx = \delta(k - k')\, ,
   \quad x\in(a, b),\, k\in(c, d)\, .$$
-  
+
 ------------------
 
 # Orthogonal basis: continuum case
@@ -174,7 +174,7 @@ If the basis is complete we can write a function $f(x)$ as
 
 $$f(x) = \int\limits_{c}^{d} C(k) \phi(k, x)\, dk\, ,$$
 
-with 
+with
 
 $$C(k) = \int\limits_{a}^{b} f(x) w(x)\phi(k, x)\, dx\, .$$
 
@@ -222,7 +222,7 @@ Using the definition and proceeding with the integral we get
 <img src="./img/Fourier_transform_time_and_frequency_domains.gif"
     width=800
     class="centObj">
-    
+
 ------------------
 
 # Visualization of Fourier Tranform
@@ -231,7 +231,7 @@ Using the definition and proceeding with the integral we get
 <img src="./img/Continuous_Fourier_transform_of_rect_and_sinc_functions.gif"
     width=800
     class="centObj">
-    
+
 ------------------
 
 # References
@@ -245,13 +245,13 @@ Using the definition and proceeding with the integral we get
   Wikipedia, The Free Encyclopedia
 
 - Wikipedia contributors. ["Hermite polynomials."](https://en.wikipedia.org/wiki/Hermite_polynomials)
-  Wikipedia, The Free Encyclopedia. 
+  Wikipedia, The Free Encyclopedia.
 
 - Wikipedia contributors. ["Fourier series."](https://en.wikipedia.org/wiki/Fourier_series)
   Wikipedia, The Free Encyclopedia.
 
 - Wikipedia contributors. ["Chebyshev polynomials."](https://en.wikipedia.org/wiki/Chebyshev_polynomials)
   Wikipedia, The Free Encyclopedia.
-  
+
 - Wikipedia contributors. ["Fourier transform."](https://en.wikipedia.org/wiki/Fourier_transform)
-  Wikipedia, The Free Encyclopedia. 
+  Wikipedia, The Free Encyclopedia.
