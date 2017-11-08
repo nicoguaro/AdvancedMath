@@ -216,7 +216,7 @@ Using the definition and proceeding with the integral we get
 
 ------------------
 
-# Visualization of Fourier Tranform
+# Visualization of Fourier Transform
 
 
 <img src="./img/Fourier_transform_time_and_frequency_domains.gif"
@@ -225,7 +225,7 @@ Using the definition and proceeding with the integral we get
 
 ------------------
 
-# Visualization of Fourier Tranform
+# Visualization of Fourier Transform
 
 
 <img src="./img/Continuous_Fourier_transform_of_rect_and_sinc_functions.gif"
