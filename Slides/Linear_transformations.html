@@ -11,13 +11,18 @@
   <meta name="author" content="github: nicoguaro" />
   <meta name="date" content="2017-07-26" />
   <title>Linear Tranformations and Eigenvalues/Eigenvectors</title>
-  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
-    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
    href="style.css" />
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
     charset="utf-8" type="text/javascript"></script>
 </head>
 <body>
@@ -55,13 +60,13 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
 </ul>
 <p><span class="math display">\[\mathbf{A}=\begin{pmatrix}0 &amp; -1\\ 1 &amp; 0\end{pmatrix}\]</span></p>
 <ul>
-<li>rotation by angle ''θ'' counterclockwise: <span class="math display">\[\mathbf{A}=\begin{pmatrix}\cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta \end{pmatrix}\]</span></li>
-<li>reflection against the ''x'' axis: <span class="math display">\[\mathbf{A}=\begin{pmatrix}1 &amp; 0\\ 0 &amp; -1\end{pmatrix}\]</span></li>
-<li>reflection against the ''y'' axis: <span class="math display">\[\mathbf{A}=\begin{pmatrix}-1 &amp; 0\\ 0 &amp; 1\end{pmatrix}\]</span></li>
+<li>rotation by angle ‘’θ’’ counterclockwise: <span class="math display">\[\mathbf{A}=\begin{pmatrix}\cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta \end{pmatrix}\]</span></li>
+<li>reflection against the ‘’x’’ axis: <span class="math display">\[\mathbf{A}=\begin{pmatrix}1 &amp; 0\\ 0 &amp; -1\end{pmatrix}\]</span></li>
+<li>reflection against the ‘’y’’ axis: <span class="math display">\[\mathbf{A}=\begin{pmatrix}-1 &amp; 0\\ 0 &amp; 1\end{pmatrix}\]</span></li>
 <li>scaling by 2 in all directions: <span class="math display">\[\mathbf{A}=\begin{pmatrix}2 &amp; 0\\ 0 &amp; 2\end{pmatrix}\]</span></li>
 <li>horizontal shear mapping: <span class="math display">\[\mathbf{A}=\begin{pmatrix}1 &amp; m\\ 0 &amp; 1\end{pmatrix}\]</span></li>
 <li>squeeze mapping: <span class="math display">\[\mathbf{A}=\begin{pmatrix}k &amp; 0\\ 0 &amp; 1/k\end{pmatrix}\]</span></li>
-<li>projection onto the ''y'' axis: <span class="math display">\[\mathbf{A}=\begin{pmatrix}0 &amp; 0\\ 0 &amp; 1\end{pmatrix}.\]</span></li>
+<li>projection onto the ‘’y’’ axis: <span class="math display">\[\mathbf{A}=\begin{pmatrix}0 &amp; 0\\ 0 &amp; 1\end{pmatrix}.\]</span></li>
 </ul>
 </div>
 <div id="eigenvalues-and-eigenvectors" class="slide section level1">
@@ -75,7 +80,7 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
 <p><img src="./img/Mona_Lisa_eigenvector_grid.png"
     width=800
     class="centObj"></p>
-<p>In this <a href="https://en.wikipedia.org/wiki/Shear_mapping">shear mapping</a> the red arrow changes direction but the blue arrow does not. The blue arrow is an eigenvector of this shear mapping because it doesn't change direction, and since its length is unchanged, its eigenvalue is 1.</p>
+<p>In this <a href="https://en.wikipedia.org/wiki/Shear_mapping">shear mapping</a> the red arrow changes direction but the blue arrow does not. The blue arrow is an eigenvector of this shear mapping because it doesn’t change direction, and since its length is unchanged, its eigenvalue is 1.</p>
 </div>
 <div id="references" class="slide section level1">
 <h1>References</h1>
