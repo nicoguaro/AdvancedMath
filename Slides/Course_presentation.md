@@ -2,7 +2,7 @@
 % Nicolás Guarín-Zapata
     email: nguarinz@eafit.edu.co
     github: nicoguaro
-% July 26, 2017
+% January 25, 2018
 
 
 ------------------
@@ -32,10 +32,8 @@ to solve engineering problems. Particularly, the student should
 
 # Evaluation: Description
 
-- First midterm: Written examination (Week 6)
-- Second midterm: Take-home examination
-    - Starts: Week 11
-    - Ends: Week 12
+- First midterm: Written examination (Week 8)
+- Second midterm: Written examination (Week 16)
 - Final exam: "Small" project. Final report in paper format.
     - Topic selection: Week 4
     - Partial report: Week 10
