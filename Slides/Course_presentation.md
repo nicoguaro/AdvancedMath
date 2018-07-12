@@ -2,7 +2,7 @@
 % Nicolás Guarín-Zapata
     email: nguarinz@eafit.edu.co
     github: nicoguaro
-% January 25, 2018
+% July, 2018
 
 
 ------------------
@@ -26,7 +26,7 @@ to solve engineering problems. Particularly, the student should
 
 - Homework 30%
 - 2 Midterms 40%
-- Final exam 30%
+- Project 30%
 
 ------------------
 
@@ -49,8 +49,8 @@ to solve engineering problems. Particularly, the student should
 
 # Textbook
 
-The main book for the course is "Física Matemática" by Alonso Sepúlveda. Also,
-the book "Advanced Engineering Mathematics" by Kreyszig is recommended (there
+The main books for the course are "Física Matemática" by Alonso Sepúlveda and
+"Advanced Engineering Mathematics" by Kreyszig (there
 are several copies in the library).
 
 ------------------
