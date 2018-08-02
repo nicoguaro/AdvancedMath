@@ -11,4 +11,3 @@ dependencies:
   - cython
   - pip:
     - mayavi
-  - pyqt
