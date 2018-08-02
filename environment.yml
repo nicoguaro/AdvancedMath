@@ -2,13 +2,14 @@ name: advance-math
 channels:
   - defaults
 dependencies:
-  - python=3.6
+  - python>=3.6
   - numpy
   - scipy
   - matplotlib
+  - pyqt>=5.9
+  - vtk>=8
+  - jupyter
   - mpmath
   - sympy
-  - vtk
-  - cython
   - pip:
     - mayavi
