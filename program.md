@@ -52,7 +52,7 @@ It is suggested to watch the series of videos
 
 3.  Eigenvalue and Eigenvector problems
 
-### Vector calculus and coordinates (3 weeks)
+### Vector calculus and coordinates (2 weeks)
 
 1.  Vectors and tensors
 
@@ -66,7 +66,7 @@ It is suggested to watch the series of videos
 
 6.  Integral theorems
 
-### Ordinary differential equations (4 weeks)
+### Ordinary differential equations (5 weeks)
 
 1.  First order differential equations
 
@@ -109,24 +109,21 @@ It is suggested to watch the series of videos
     1.  Sturm-Liouville problems
     2.  Bessel functions
 
-4.  Green Functions solution
+4.  Ritz method
 
-5.  Ritz method
+5.  Weighted residual methods
 
 ## Textbook
 
-The textbook for the course is “Física Matemática” by Alonso Sepúlveda.
-It is also suggested as a guide the book “Advanced Engineering Mathematics”
-by Kreyszig.
+The textbookd for the course are “Física Matemática” by Alonso Sepúlveda, and
+“Advanced Engineering Mathematics” by Erwin Kreyszig.
 
 
 ## Evaluation
 
--   Assignments 20%
+-   Assignments 30%
 
 -   2 Midterms 40%
-
--   Quizzes 10%
 
 -   Final project 30%
 
@@ -135,6 +132,8 @@ by Kreyszig.
 -   Linear Algebra.
 
 -   Differential equations.
+
+-   Vector calculus.
 
 ## References
 
