@@ -2,6 +2,7 @@ name: advance-math
 channels:
   - defaults
 dependencies:
+  - python=3.6
   - numpy
   - scipy
   - matplotlib
