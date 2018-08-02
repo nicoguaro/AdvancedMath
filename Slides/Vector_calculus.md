@@ -1,8 +1,8 @@
-% Curvilinear coordinates and Vector Calculus
+% Curvilinear coordinates and vector calculus
 % Nicolás Guarín-Zapata
     email: nguarinz@eafit.edu.co
     github: nicoguaro
-% February, 2018
+% August, 2018
 
 
 
