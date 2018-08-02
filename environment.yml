@@ -1,13 +1,13 @@
-name: advance-math
+name: advanced-math
 channels:
-  - defaults
+  - conda-forge
 dependencies:
-  - python>=3.6
+  - python=3.6
   - numpy
   - scipy
   - matplotlib
   - pyqt>=5.9
   - vtk>=8
   - jupyter
-  - mpmath
   - sympy
+  - mayavi
