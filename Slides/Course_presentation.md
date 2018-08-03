@@ -76,7 +76,7 @@ A good Python tutorial for scientific purpose is
 
 And I wrote a short tutorial for SymPy. You can find it in the course GitHub's
 repository, or follow this
-[link](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy%20in%2010%20minutes.ipynb).
+[link](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy/SymPy_in_10_minutes.ipynb).
 
 ------------------
 

@@ -7,13 +7,18 @@ references can be found [here](./references.md).
 
 ## Contents
 
-- Notebooks: This folder contains several Jupyter Notebooks intended to teach SymPy
-    - [SymPy in 10 minutes](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy%20in%2010%20minutes.ipynb)
-    - [Linear Algebra in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Linear%20Algebra.ipynb)
+- Notebooks: This folder contains several Jupyter Notebooks.
+
+  - Sympy Tutorials:
+    - [SymPy in 10 minutes](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy/SymPy_in_10_minutes.ipynb)
+    - [Linear Algebra in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy/Linear_Algebra.ipynb)
+    - [Ordinary differential equations in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy/ODE.ipynb)
+    - [Laplace Transform](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy/Laplace_transform.ipynb)
+
+  - Lessons:
     - [Vector calculus and coordinate systems](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Vector_calculus.ipynb)
-    - [Ordinary differential equations in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/ODE.ipynb)
-    - [Laplace Transform](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Laplace_transform.ipynb)
     - [Orthonormal basis and Fourier Analysis](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Fourier_analysis.ipynb)
+
 
 - Slides
     - [Course presentation](https://cdn.rawgit.com/nicoguaro/AdvancedMath/cddc9b94/Slides/Course_presentation.html)
