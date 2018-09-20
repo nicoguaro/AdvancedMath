@@ -9,7 +9,6 @@
   <meta name="author" content="Nicolás Guarín-Zapata" />
   <meta name="author" content="email: nguarinz@eafit.edu.co" />
   <meta name="author" content="github: nicoguaro" />
-  <meta name="date" content="2017-09-20" />
   <title>Orthogonal bases and Fourier analysis</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
@@ -31,7 +30,7 @@
   <p class="author">
 Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
   </p>
-  <p class="date">September 20, 2017</p>
+  <p class="date">September, 2018</p>
 </div>
 <div id="inner-products" class="slide section level1">
 <h1>Inner products</h1>
@@ -149,11 +148,11 @@ b_n = \frac{2}{P}\int_{x_0}^{x_0+P} \sin\left(\frac{2\pi nx}{P}\right) f(x)\, dx
 <p>We can compute the Fourier transform of a Gaussian function</p>
 <p><span class="math display">\[f(x) = e^{-\alpha^2 x^2},\quad x\in(-\infty, \infty)\]</span></p>
 <p>Using the definition and proceeding with the integral we get</p>
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[\begin{align}
   F(k) &amp;= \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} e^{-\alpha^2(x^2 + ikx/\alpha^2)} dx\\
        &amp;= \frac{e^{-k/4\alpha^2}}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} e^{-\alpha^2(x + ikx/2\alpha^2)^2} dx\\
        &amp;= \frac{1}{\sqrt{\pi} \alpha} e^{-k^2/4\alpha^2} \, .
-\end{align}\]</span>
+\end{align}\]</span></p>
 </div>
 <div id="visualization-of-fourier-transform" class="slide section level1">
 <h1>Visualization of Fourier Transform</h1>

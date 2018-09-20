@@ -9,7 +9,6 @@
   <meta name="author" content="Nicolás Guarín-Zapata" />
   <meta name="author" content="email: nguarinz@eafit.edu.co" />
   <meta name="author" content="github: nicoguaro" />
-  <meta name="date" content="2017-08-31" />
   <title>Ordinary differential equations</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
@@ -31,7 +30,7 @@
   <p class="author">
 Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
   </p>
-  <p class="date">August 31, 2017</p>
+  <p class="date">August, 2018</p>
 </div>
 <div id="ordinary-differential-equations" class="slide section level1">
 <h1>Ordinary differential equations</h1>
@@ -42,23 +41,23 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
 <div id="classification-number-of-variables" class="slide section level1">
 <h1>Classification: Number of variables</h1>
 <p>How many independent variables does the equation have?</p>
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[\begin{align}
 &amp;L\frac{d^2 Q}{dt^2} + R\frac{dQ}{dt} + \frac{1}{C}Q = E  &amp;\text{(ODE)}\\
 &amp;\frac{\partial u}{\partial t} =\alpha \frac{\partial^2 u}{\partial x^2}  &amp;\text{(PDE)}\\
 &amp;\frac{\partial u}{\partial t} =\frac{\partial^2 u}{\partial r^2} +
     \frac{1}{r} \frac{\partial u}{\partial r} +
     \frac{1}{r^2}\frac{\partial^2 u}{\partial \theta^2}  &amp;\text{(PDE)}
-\end{align}\]</span>
+\end{align}\]</span></p>
 </div>
 <div id="classification-order" class="slide section level1">
 <h1>Classification: Order</h1>
 <p>What is the order of the higher derivative?</p>
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[\begin{align}
 &amp;\frac{\partial u}{\partial t} =\alpha \frac{\partial^2 u}{\partial x^2}  &amp;\text{(Second order)}\\
 &amp;\frac{d^2 u}{d t^2} = f(t)  &amp;\text{(Second order)}\\
 &amp;\frac{d^{(3)} y}{dx^3} + 2 e^x \frac{d^2 y}{d x^2} +
     y\frac{d y}{dx} = x^4  &amp;\text{(Third order)}
-\end{align}\]</span>
+\end{align}\]</span></p>
 </div>
 <div id="classification-homogeneity" class="slide section level1">
 <h1>Classification: Homogeneity</h1>
@@ -71,19 +70,19 @@ Nicolás Guarín-Zapata<br/>email: nguarinz@eafit.edu.co<br/>github: nicoguaro
 <p>The equation</p>
 <p><span class="math display">\[F(z, y, y&#39;, y&#39;&#39;, \cdots, y^{(n)}) = 0\, ,\]</span></p>
 <p>is linear if <span class="math inline">\(F\)</span> is a linear function of the variables <span class="math inline">\(y, y&#39;, \cdots, y^{(n)}\)</span>.</p>
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[\begin{align}
 &amp;\frac{\partial^2 u}{\partial t^2} = e^{-t} \frac{\partial^2 u}{\partial x^2}
   + \sin t  &amp;\text{(Linear)}\\
 &amp;\frac{d^2 \theta}{d t^2} = \frac{g}{l}\sin\theta  &amp;\text{(Non-linear)}
-\end{align}\]</span>
+\end{align}\]</span></p>
 </div>
 <div id="classification-type-of-coefficients" class="slide section level1">
 <h1>Classification: Type of coefficients</h1>
 <p>In the case of linear equations, we analyze the coefficients of the linear combination. Are these coefficients constant or functions of <span class="math inline">\(x\)</span>?</p>
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[\begin{align}
 &amp;a\frac{d^2 u}{d t^2} + b \frac{d u}{d t} + c u  = 0 &amp;\text{(Constant coefficients)}\\
 &amp;\frac{d}{dx}\left(x\frac{d w}{dx}\right) = -\omega^2 w  &amp;\text{(Variable coefficients)}
-\end{align}\]</span>
+\end{align}\]</span></p>
 </div>
 <div id="examples-free-fall" class="slide section level1">
 <h1>Examples: Free fall</h1>
@@ -131,6 +130,71 @@ Your browser does not support the video tag. </video>
 </tr>
 </table>
 </div>
+<div id="equations-of-first-order" class="slide section level1">
+<h1>Equations of first order</h1>
+<p>Equations of first order are of the form</p>
+<p><span class="math display">\[\frac{\mathrm{d} y}{\mathrm{d} z} = f(z, y)\, .\]</span></p>
+<p>For an arbitrary function <span class="math inline">\(f\)</span> there is not method for solving this equation in terms of elementary functions.</p>
+</div>
+<div id="linear-equations-of-first-order" class="slide section level1">
+<h1>Linear equations of first order</h1>
+<p>They are of the form</p>
+<p><span class="math display">\[a_0(z) y&#39; + a_1(z) y = f(z)\, .\]</span></p>
+<p>We are assuming that <span class="math inline">\(a_0(z)\)</span>, <span class="math inline">\(a_1(z)\)</span>, and <span class="math inline">\(f(z)\)</span> are continuous.</p>
+</div>
+<div id="linear-equations-of-first-order-homogeneous-case" class="slide section level1">
+<h1>Linear equations of first order: homogeneous case</h1>
+<p>We can write it as</p>
+<p><span class="math display">\[\frac{\mathrm{d}} {\mathrm{d}z}\ln y + \frac{a_1(z)}{a_0(z)} = 0\, ,\]</span></p>
+<p>after integration</p>
+<p><span class="math display">\[y = y_0 \exp\left[-\int\limits_{z_0}^z \frac{a_1(t)}{a_0(t)}\mathrm{d}t\right]\, .\]</span></p>
+</div>
+<div id="linear-equations-of-first-order-inhomogeneous-case" class="slide section level1">
+<h1>Linear equations of first order: inhomogeneous case</h1>
+<p>To solve the equation</p>
+<p><span class="math display">\[y&#39; + \frac{a_1(z)}{a_0(z)} y = \frac{f(z)}{a_0(z)}\, ,\]</span></p>
+<p>with <span class="math inline">\(y(0)=y_0\)</span>, we use the adjoint equation</p>
+<p><span class="math display">\[x&#39; - \frac{a_1(z)}{a_0(z)} x = 0\, ,\]</span></p>
+<p>with <span class="math inline">\(x(0) = 1\)</span>.</p>
+</div>
+<div id="linear-equations-of-first-order-inhomogeneous-case-1" class="slide section level1">
+<h1>Linear equations of first order: inhomogeneous case</h1>
+<p>And we solve the differential equation</p>
+<p><span class="math display">\[(xy)&#39; = xy&#39; + x&#39; y = x\frac{f(z)}{a_0(z)}\, ,\]</span></p>
+<p>and, after integration</p>
+<p><span class="math display">\[y = \frac{y_0}{x} + \frac{1}{x}\int\limits_{0}^{z}\frac{x f(t)}{a_0(t)}\mathrm{d}t\, .\]</span></p>
+</div>
+<div id="systems-of-differential-equations" class="slide section level1">
+<h1>Systems of differential equations</h1>
+<p>Sometimes we have more than one differential equations. For example,</p>
+<p><span class="math display">\[
+\begin{align}
+&amp;F_1(z, y_1, y_1&#39;, y_1&#39;&#39;, y_2, y_2&#39;) = 0\, ,\\
+&amp;F_2(z, y_1, y_1&#39;, y_2, y_2&#39;, y_2&#39;&#39;, y_2&#39;&#39;&#39;) = 0\, .
+\end{align}
+\]</span></p>
+</div>
+<div id="systems-of-differential-equations-1" class="slide section level1">
+<h1>Systems of differential equations</h1>
+<p>Using the new variables</p>
+<p><span class="math display">\[
+\begin{align}
+&amp;x_1 = y_1\, ,  &amp; x_4 = y_2&#39;\, ,\\
+&amp;x_2 = y_1&#39;\, , &amp; x_5 = y_2&#39;&#39;\, ,\\
+&amp;x_3 = y_2\, ,  &amp; 
+\end{align}
+\]</span></p>
+<p>we can rewrite the following system</p>
+<p><span class="math display">\[
+\begin{align}
+&amp;x_1&#39; = G_1(z, x_1, x_2, x_3, x_4) = x_2\, ,\\
+&amp;x_2&#39; = G_2(z, x_1, x_2, x_3, x_4)\, ,\\
+&amp;x_3&#39; = G_3(z, x_1, x_2, x_3, x_4) = x_4\, ,\\
+&amp;x_4&#39; = G_4(z, x_1, x_2, x_3, x_4) = x_5\, ,\\
+&amp;x_5&#39; = G_5(z, x_1, x_2, x_3, x_4)\, .\\
+\end{align}
+\]</span></p>
+</div>
 <div id="power-series-solutions" class="slide section level1">
 <h1>Power series solutions</h1>
 <p>Consider the second-order linear differential equation</p>
@@ -158,13 +222,13 @@ Your browser does not support the video tag. </video>
 <div id="power-series-solutions-example-2-1" class="slide section level1">
 <h1>Power series solutions: Example 2</h1>
 <p>We obtain the general solution</p>
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[\begin{align}
 y(z) =&amp;
 C_0\left[1 +
 \sum_{k=1}^{\infty} \frac{z^{3k}}{(2\cdot 3) (5\cdot 6) \cdots ((3k-1) \cdot (3k))}\right]\\
    &amp;+ C_1\left[z +
 \sum_{k=1}^{\infty} \frac{z^{3k+1}}{(3\cdot 4) (6\cdot 7) \cdots ((3k) \cdot (3k+1))}\right]
-\end{align}\]</span>
+\end{align}\]</span></p>
 </div>
 <div id="power-series-solutions-example-2-2" class="slide section level1">
 <h1>Power series solutions: Example 2</h1>
@@ -191,11 +255,11 @@ They appear in the solution of Scrödinger equation for a particle confined with
 1 + \left(\sum_{k=0}^{\infty} A_k t^k\right)^2 =
 1 + A_0^2 + \sum_{k=1}^\infty\left[\sum_{j=0}^{k} A_j A_{k-j}\right]t^k\]</span></p>
 <p>and the coefficients are</p>
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[\begin{align}
 A_0 &amp;= 0\\
 A_1 &amp;= 1 + A_0^2\\
 A_{k + 1} &amp;= \frac{1}{k + 1}\sum_{j=0}^{k} A_{k} A_{j - k}\quad \forall k\in \mathbb{N}
-\end{align}\]</span>
+\end{align}\]</span></p>
 </div>
 <div id="frobenius-method" class="slide section level1">
 <h1>Frobenius method</h1>
@@ -209,10 +273,10 @@ A_{k + 1} &amp;= \frac{1}{k + 1}\sum_{j=0}^{k} A_{k} A_{j - k}\quad \forall k\in
 <p>We are looking for a solution of the form</p>
 <p><span class="math display">\[u(z) = \sum_{k=0}^\infty A_k z^{k + r}\quad A_0\neq 0, r\in \mathbb{R}\, ,\]</span></p>
 <p>that leads us to the equation</p>
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[\begin{align}
   0 =&amp;[r (r - 1) + p(z) + q(z)]A_0 z^r \\
   &amp;+ \sum_{k=1}^{\infty} [(k + r - 1)(k + r) + p(z)(k + r) + q(z)]A_k z^{k + r}
-\end{align}\]</span>
+\end{align}\]</span></p>
 </div>
 <div id="frobenius-method-2" class="slide section level1">
 <h1>Frobenius method</h1>
@@ -224,27 +288,27 @@ A_{k + 1} &amp;= \frac{1}{k + 1}\sum_{j=0}^{k} A_{k} A_{j - k}\quad \forall k\in
 <div id="frobenius-method-case-1" class="slide section level1">
 <h1>Frobenius method: Case 1</h1>
 <p>The roots do not differ by an integer</p>
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[\begin{align}
 y_1 &amp;= \sum_{k=0}^\infty A_k z^{k + r_1}\quad A_0\neq 0\\
 y_2 &amp;= \sum_{k=0}^\infty A_k z^{k + r_2}\quad A_0\neq 0
-\end{align}\]</span>
+\end{align}\]</span></p>
 </div>
 <div id="frobenius-method-case-2" class="slide section level1">
 <h1>Frobenius method: Case 2</h1>
 <p>The roots do differ by an integer</p>
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[\begin{align}
 y_1 &amp;= \sum_{k=0}^\infty A_k z^{k + r_1}\quad A_0\neq 0\\
 y_2 &amp;= C y_1 \ln(z) + \sum_{k=0}^\infty A_k z^{k + r_2}\quad A_0\neq 0
-\end{align}\]</span>
+\end{align}\]</span></p>
 <p>where <span class="math inline">\(C\)</span> is a constant that could be zero.</p>
 </div>
 <div id="frobenius-method-case-3" class="slide section level1">
 <h1>Frobenius method: Case 3</h1>
 <p>The roots are the same</p>
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[\begin{align}
 y_1 &amp;= \sum_{k=0}^\infty A_k z^{k + r_1}\quad A_0\neq 0\\
 y_2 &amp;= y_1 \ln(z) + \sum_{k=0}^\infty A_k z^{k + r_2}\quad A_0\neq 0
-\end{align}\]</span>
+\end{align}\]</span></p>
 </div>
 <div id="bessel-equation" class="slide section level1">
 <h1>Bessel equation</h1>

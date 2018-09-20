@@ -2,7 +2,7 @@
 % Nicolás Guarín-Zapata
     email: nguarinz@eafit.edu.co
     github: nicoguaro
-% August 31, 2017
+% August, 2018
 
 
 
@@ -86,6 +86,7 @@ combination. Are these coefficients constant or functions of $x$?
 ------------------
 
 # Examples: Free fall
+
 <table>
 <tr>
 <td>
@@ -105,6 +106,7 @@ $$y'' =g = \text{const}$$
 ------------------
 
 # Examples: Parachute falling
+
 <table>
 <tr>
 <td>
@@ -124,6 +126,7 @@ $$m\frac{d^2 y}{dt^2} = mg - b\left(\frac{dy}{dt}\right)^2$$
 ------------------
 
 # Examples: Pendulum
+
 <table>
 <tr>
 <td>
@@ -139,6 +142,106 @@ $$L\theta'' + g\sin\theta = 0$$
 </td>
 </tr>
 </table>
+
+------------------
+
+# Equations of first order
+
+Equations of first order are of the form
+
+$$\frac{\mathrm{d} y}{\mathrm{d} z} = f(z, y)\, .$$
+
+For an arbitrary function $f$ there is not method for solving this equation
+in terms of elementary functions.
+
+------------------
+
+# Linear equations of first order
+
+They are of the form
+
+$$a_0(z) y' + a_1(z) y = f(z)\, .$$
+
+We are assuming that $a_0(z)$, $a_1(z)$, and $f(z)$ are continuous.
+
+------------------
+
+# Linear equations of first order: homogeneous case
+
+We can write it as
+
+$$\frac{\mathrm{d}} {\mathrm{d}z}\ln y + \frac{a_1(z)}{a_0(z)} = 0\, ,$$
+
+after integration
+
+$$y = y_0 \exp\left[-\int\limits_{z_0}^z \frac{a_1(t)}{a_0(t)}\mathrm{d}t\right]\, .$$
+
+------------------
+
+# Linear equations of first order: inhomogeneous case
+
+To solve the equation
+
+$$y' + \frac{a_1(z)}{a_0(z)} y = \frac{f(z)}{a_0(z)}\, ,$$
+
+with $y(0)=y_0$, we use the adjoint equation
+
+$$x' - \frac{a_1(z)}{a_0(z)} x = 0\, ,$$
+
+with $x(0) = 1$.
+
+------------------
+
+# Linear equations of first order: inhomogeneous case
+
+And we solve the differential equation
+
+$$(xy)' = xy' + x' y = x\frac{f(z)}{a_0(z)}\, ,$$
+
+and, after integration
+
+$$y = \frac{y_0}{x} + \frac{1}{x}\int\limits_{0}^{z}\frac{x f(t)}{a_0(t)}\mathrm{d}t\, .$$
+
+------------------
+
+# Systems of differential equations
+
+Sometimes we have more than one differential equations. For example,
+
+$$
+\begin{align}
+&F_1(z, y_1, y_1', y_1'', y_2, y_2') = 0\, ,\\
+&F_2(z, y_1, y_1', y_2, y_2', y_2'', y_2''') = 0\, .
+\end{align}
+$$
+
+
+------------------
+
+# Systems of differential equations
+
+Using the new variables
+
+$$
+\begin{align}
+&x_1 = y_1\, ,  & x_4 = y_2'\, ,\\
+&x_2 = y_1'\, , & x_5 = y_2''\, ,\\
+&x_3 = y_2\, ,  & 
+\end{align}
+$$
+
+we can rewrite the following system
+
+$$
+\begin{align}
+&x_1' = G_1(z, x_1, x_2, x_3, x_4) = x_2\, ,\\
+&x_2' = G_2(z, x_1, x_2, x_3, x_4)\, ,\\
+&x_3' = G_3(z, x_1, x_2, x_3, x_4) = x_4\, ,\\
+&x_4' = G_4(z, x_1, x_2, x_3, x_4) = x_5\, ,\\
+&x_5' = G_5(z, x_1, x_2, x_3, x_4)\, .\\
+\end{align}
+$$
+
 
 ------------------
 
@@ -444,6 +547,3 @@ $$\Gamma(z) = \int_{0}^{\infty} t^{z-1} e^{-t} \mathrm{d}t\, .$$
 
 - Ruryk, 2011. Oscilatting pendulum. Retrieved from:
   https://commons.wikimedia.org/wiki/File:PenduloTmg.gif
-
-
-
