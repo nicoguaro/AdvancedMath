@@ -2,7 +2,7 @@
 % Nicolás Guarín-Zapata
     email: nguarinz@eafit.edu.co
     github: nicoguaro
-% August, 2018
+% February, 2019
 
 
 
@@ -226,7 +226,7 @@ $$
 \begin{align}
 &x_1 = y_1\, ,  & x_4 = y_2'\, ,\\
 &x_2 = y_1'\, , & x_5 = y_2''\, ,\\
-&x_3 = y_2\, ,  & 
+&x_3 = y_2\, ,  &
 \end{align}
 $$
 
