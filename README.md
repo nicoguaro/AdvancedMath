@@ -21,10 +21,10 @@ references can be found [here](./references.md).
 
 
 - Slides
-    - [Course presentation](https://cdn.rawgit.com/nicoguaro/AdvancedMath/cddc9b94/slides/course_presentation.html)
-    - [Linear transformations](https://cdn.rawgit.com/nicoguaro/AdvancedMath/5fa8ad68/slides/linear_transformations.html)
-    - [Vector calculus and coordinate systems](https://cdn.rawgit.com/nicoguaro/AdvancedMath/597051f1/slides/vector_calculus.html)
-    - [Orthonormal basis and Fourier Analysis](https://cdn.rawgit.com/nicoguaro/AdvancedMath/37e5cf49/slides/fourier_analysis.html)
+    - [Course presentation](https://cdn.rawgit.com/nicoguaro/AdvancedMath/cddc9b94/Slides/Course_presentation.html)
+    - [Linear transformations](https://cdn.rawgit.com/nicoguaro/AdvancedMath/5fa8ad68/Slides/Linear_transformations.html)
+    - [Vector calculus and coordinate systems](https://cdn.rawgit.com/nicoguaro/AdvancedMath/597051f1/Slides/Vector_calculus.html)
+    - [Orthonormal basis and Fourier Analysis](https://cdn.rawgit.com/nicoguaro/AdvancedMath/37e5cf49/Slides/Fourier_analysis.html)
 
 ## Downloading the Tutorial Materials
 You can clone the repo using:
