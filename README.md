@@ -10,21 +10,21 @@ references can be found [here](./references.md).
 - Notebooks: This folder contains several Jupyter Notebooks.
 
   - Sympy Tutorials:
-    - [SymPy in 10 minutes](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy/SymPy_in_10_minutes.ipynb)
-    - [Linear Algebra in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy/Linear_Algebra.ipynb)
-    - [Ordinary differential equations in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy/ODE.ipynb)
-    - [Laplace Transform](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/SymPy/Laplace_transform.ipynb)
+    - [SymPy in 10 minutes](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/sympy/sympy_in_10_minutes.ipynb)
+    - [Linear Algebra in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/sympy/linear_algebra.ipynb)
+    - [Ordinary differential equations in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/sympy/ode.ipynb)
+    - [Laplace Transform](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/sympy/laplace_transform.ipynb)
 
   - Lessons:
-    - [Vector calculus and coordinate systems](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Vector_calculus.ipynb)
-    - [Orthonormal basis and Fourier Analysis](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/Fourier_analysis.ipynb)
+    - [Vector calculus and coordinate systems](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/vector_calculus.ipynb)
+    - [Orthonormal basis and Fourier Analysis](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/fourier_analysis.ipynb)
 
 
 - Slides
-    - [Course presentation](https://cdn.rawgit.com/nicoguaro/AdvancedMath/cddc9b94/Slides/Course_presentation.html)
-    - [Linear transformations](https://cdn.rawgit.com/nicoguaro/AdvancedMath/5fa8ad68/Slides/Linear_transformations.html)
-    - [Vector calculus and coordinate systems](https://cdn.rawgit.com/nicoguaro/AdvancedMath/597051f1/Slides/Vector_calculus.html)
-    - [Orthonormal basis and Fourier Analysis](https://cdn.rawgit.com/nicoguaro/AdvancedMath/37e5cf49/Slides/Fourier_analysis.html)
+    - [Course presentation](https://cdn.rawgit.com/nicoguaro/AdvancedMath/cddc9b94/slides/course_presentation.html)
+    - [Linear transformations](https://cdn.rawgit.com/nicoguaro/AdvancedMath/5fa8ad68/slides/linear_transformations.html)
+    - [Vector calculus and coordinate systems](https://cdn.rawgit.com/nicoguaro/AdvancedMath/597051f1/slides/vector_calculus.html)
+    - [Orthonormal basis and Fourier Analysis](https://cdn.rawgit.com/nicoguaro/AdvancedMath/37e5cf49/slides/fourier_analysis.html)
 
 ## Downloading the Tutorial Materials
 You can clone the repo using:
