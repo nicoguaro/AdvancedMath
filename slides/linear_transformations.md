@@ -2,7 +2,7 @@
 % Nicolás Guarín-Zapata
     email: nguarinz@eafit.edu.co
     github: nicoguaro
-% January, 2019
+% July 2019
 
 
 ------------------
