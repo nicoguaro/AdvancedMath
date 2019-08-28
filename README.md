@@ -10,14 +10,14 @@ references can be found [here](./references.md).
 - Notebooks: This folder contains several Jupyter Notebooks.
 
   - Sympy Tutorials:
-    - [SymPy in 10 minutes](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/sympy/sympy_in_10_minutes.ipynb)
-    - [Linear Algebra in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/sympy/linear_algebra.ipynb)
-    - [Ordinary differential equations in SymPy](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/sympy/ode.ipynb)
-    - [Laplace Transform](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/Notebooks/sympy/laplace_transform.ipynb)
+    - [SymPy in 10 minutes](https://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/sympy/sympy_in_10_minutes.ipynb)
+    - [Linear Algebra in SymPy](https://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/sympy/linear_algebra.ipynb)
+    - [Ordinary differential equations in SymPy](https://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/sympy/ode.ipynb)
+    - [Laplace Transform](https://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/sympy/laplace_transform.ipynb)
 
   - Lessons:
-    - [Vector calculus and coordinate systems](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/vector_calculus.ipynb)
-    - [Orthonormal basis and Fourier Analysis](http://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/fourier_analysis.ipynb)
+    - [Vector calculus and coordinate systems](https://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/vector_calculus.ipynb)
+    - [Orthonormal basis and Fourier Analysis](https://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/fourier_analysis.ipynb)
 
 
 - Slides
