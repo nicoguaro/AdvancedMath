@@ -9,5 +9,9 @@ dependencies:
   - pyqt>=5.9
   - vtk>=8
   - jupyter
+  - ipywidgets
+  - ipyevents
+  - pyvista
+  - itkwidgets
   - sympy
   - mayavi
