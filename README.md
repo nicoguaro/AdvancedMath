@@ -16,7 +16,7 @@ references can be found [here](./references.md).
     - [Laplace Transform](https://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/sympy/laplace_transform.ipynb)
 
   - Lessons:
-    - [Vector calculus and coordinate systems](https://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/vector_calculus.ipynb)
+    - [Vector calculus and coordinate systems](https://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/vector_calculus-pyvista.ipynb)
     - [Orthonormal basis and Fourier Analysis](https://nbviewer.jupyter.org/github/nicoguaro/AdvancedMath/blob/master/notebooks/fourier_analysis.ipynb)
 
 
