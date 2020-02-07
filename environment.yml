@@ -2,7 +2,7 @@ name: advanced-math
 channels:
   - conda-forge
 dependencies:
-  - python=3.6
+  - python>3.6
   - numpy
   - scipy
   - matplotlib
@@ -15,3 +15,6 @@ dependencies:
   - itkwidgets
   - sympy
   - mayavi
+  - pip
+  - pip:
+    - continuum_mechanics
